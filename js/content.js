@@ -102,6 +102,13 @@ window.CONTENT = {
       why:  { pt: "Vidro preto, acendimento automático. O coração da cozinha.", en: "Black glass, auto ignition. The heart of the kitchen." },
     },
     {
+      id: "geladeira", qty: 1, price: 2199, image: "images/geladeira-electrolux-tf38.jpg",
+      url: "https://shopee.com.br/product/1526836548/22194482785",
+      store: "Shopee (loja oficial Electrolux)",
+      name: { pt: "Geladeira Electrolux Frost Free Duplex 320 L (TF38), 220V", en: "Electrolux frost-free fridge with freezer, 320 L (TF38), 220V" },
+      why:  { pt: "Frost free, não precisa descongelar. Branca. Escolha a opção 220V na loja.", en: "Frost-free, no defrosting. White. Pick the 220V option in the store." },
+    },
+    {
       id: "cama-jasmim", qty: 2, price: 400, image: "images/cama-jasmim.jpg",
       url: "https://www.madeiramadeira.com.br/-478987534.html",
       store: "MadeiraMadeira",

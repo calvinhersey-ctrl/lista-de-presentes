@@ -51,3 +51,6 @@ Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double matt
 ## 26 Oct 2026, dining table + sofa colour
 - Dining table: Provenza 6 cadeiras (Amoudi, Casa Aberta Brasil, R$1,228, 140x74) replaces the 4-seat Provenza. Bruna had sent the Milena table (table only, really seats 4).
 - Sofá Lívia: colour Bege.
+
+## 26 Oct 2026, fridge
+- Electrolux TF38 Frost Free Duplex 320L, 220V, R$2,199 after voucher (R$2,299 otherwise) + ~R$20 frete, Electrolux official Shopee store, 4.9★ / 2.3k, 3k+ sold, 12-month warranty. Cheaper manual-defrost options (Midea 294L, Consul CRD37) were only ~R$100 less, so frost free wins. Next step up: Consul CRM44 377L ~R$2,575, Electrolux IF41 380L inverter ~R$2,649.
