@@ -172,6 +172,20 @@ window.CONTENT = {
       why:  { pt: "Puxa a ponta para fora e aponta para onde quiser. Cor prata (cromada).", en: "Pull the head out and point it anywhere. Silver (chrome) colour." },
     },
     {
+      id: "sofa", qty: 1, price: 1080, image: "images/sofa-livia-adonai.jpg",
+      url: "https://shopee.com.br/product/296813643/18399194308",
+      store: "Shopee (Adonai Estofados)",
+      name: { pt: "Sofá Lívia 3 lugares, retrátil e reclinável, 1,80 m", en: "Lívia 3-seat sofa, extending and reclining, 1.80 m" },
+      why:  { pt: "Cor bege, suede, com molas. Para a sala. O frete vem à parte (uns R$ 130).", en: "Beige suede, sprung seat. For the living room. Shipping is extra (about R$130)." },
+    },
+    {
+      id: "tv", qty: 1, price: 3771, image: "images/tv-tcl-65c6k.jpg",
+      url: "https://shopee.com.br/product/1083800536/23699653165",
+      store: "Shopee (loja oficial Casas Bahia)",
+      name: { pt: "Smart TV TCL 65\" QD-Mini LED 4K (65C6K)", en: "TCL 65\" QD-Mini LED 4K smart TV (65C6K)" },
+      why:  { pt: "Mini LED, 144 Hz, Google TV, som Onkyo. Preço no Pix; no cartão sai R$ 4.299.", en: "Mini LED, 144 Hz, Google TV, Onkyo sound. Pix price; by card it's R$4,299." },
+    },
+    {
       id: "escrivaninha", qty: 1, price: 80, image: "images/escrivaninha-bonatto.jpg",
       url: "https://shopee.com.br/product/1242718651/22297570286",
       store: "Shopee (Móveis Bonatto)",

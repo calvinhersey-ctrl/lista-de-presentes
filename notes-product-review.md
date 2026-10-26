@@ -62,3 +62,7 @@ Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double matt
 - Sofá Lívia taken off.
 - Total of the list (price x qty, store prices, shipping not included): R$12,156 for 17 items / 23 units (~US$2,250 at 5.4). Wardrobe is approximate (R$790).
 - Open issue: bicama Funny takes a 78x188 mattress, max 14 cm for the pull-out; the Ortobom single kit is 88x188x18.
+
+## 26 Oct 2026, sofa back + TV
+- Sofá Lívia (bege) back on the list.
+- TV: TCL 65C6K QD-Mini LED 144Hz, Casas Bahia official Shopee store, R$3,771 Pix (R$4,299 card), 4.9★ / 119, 12-month warranty. Alternatives seen: LG 65 QNED70 Mini LED R$3,403 Pix (fewer zones), Samsung M75H 65 Mini LED R$3,661 (4.6★).
