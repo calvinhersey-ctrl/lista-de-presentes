@@ -151,11 +151,11 @@ window.CONTENT = {
       why:  { pt: "Um para cada banheiro.", en: "One for each bathroom." },
     },
     {
-      id: "torneira-cozinha", qty: 1, price: 196, image: "images/torneira-cozinha-flex.jpg",
-      url: "https://www.madeiramadeira.com.br/torneira-de-cozinha-lorenzetti-flex-de-mesa-preta-1177-b27-1014326.html",
-      store: "MadeiraMadeira",
-      name: { pt: "Torneira de cozinha Lorenzetti Loren Flex, bica flexível", en: "Lorenzetti Loren Flex kitchen tap, flexible spout" },
-      why:  { pt: "A bica dobra para onde você quiser. Preta, de bancada, 12 anos de garantia.", en: "The spout bends wherever you need it. Black, countertop, 12-year warranty." },
+      id: "torneira-cozinha", qty: 1, price: 68, image: "images/torneira-cozinha-gourmet.jpg",
+      url: "https://shopee.com.br/product/1103633550/28731475565",
+      store: "Shopee (Haolian Casa)",
+      name: { pt: "Torneira gourmet com ducha extensível, giro 360°", en: "Gourmet kitchen tap with pull-out spray head, 360° swivel" },
+      why:  { pt: "Puxa a ponta para fora e aponta para onde quiser. Cor prata (cromada).", en: "Pull the head out and point it anywhere. Silver (chrome) colour." },
     },
     {
       id: "sofa", qty: 1, price: 1080, image: "images/sofa-livia-adonai.jpg",
@@ -184,6 +184,13 @@ window.CONTENT = {
       store: "Shopee (Kelan Móveis)",
       name: { pt: "Kit 2 mesas laterais pé palito", en: "Set of 2 round side tables, tapered legs" },
       why:  { pt: "Para o lado do sofá. Pequenas, 29 cm.", en: "For beside the sofa. Small, 29 cm across." },
+    },
+    {
+      id: "guarda-roupa", qty: 1, price: 790, image: "images/guarda-roupa-belgica.jpg",
+      url: "https://shopee.com.br/product/1097902002/23998900565",
+      store: "Shopee (loja oficial Santos Andirá)",
+      name: { pt: "Guarda-roupa Bélgica com espelho, 2 portas de correr, 2 gavetas", en: "Bélgica wardrobe with mirror, 2 sliding doors, 2 drawers" },
+      why:  { pt: "Branco, 119 cm de largura. Preço aproximado, confira na loja.", en: "White, 119 cm wide. Price is approximate, check the store." },
     },
     {
       id: "torneira-lavatorio", qty: 2, price: 50, image: "images/torneira-lavatorio-dourada.jpg",
