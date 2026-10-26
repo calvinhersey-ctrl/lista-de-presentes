@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" translate="no">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -8,14 +8,27 @@
   <meta property="og:title" content="Lista de presentes · Bruna & Calvin">
   <meta property="og:description" content="Escolha um presente para a nossa casa nova no Brasil e deixe seu nome.">
   <meta property="og:image" content="images/mesa-provenza-6.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f6b4a'/%3E%3Crect x='14' y='26' width='36' height='26' rx='3' fill='%23faf8f3'/%3E%3Crect x='10' y='18' width='44' height='10' rx='3' fill='%23f2c230'/%3E%3Crect x='29' y='18' width='6' height='34' fill='%230f6b4a'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0b5d3f">
+  <!-- The page has its own Português | English switch; browser auto-translate garbles names. -->
+  <meta name="google" content="notranslate">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b5d3f'/%3E%3Crect x='14' y='26' width='36' height='26' rx='3' fill='%23faf8f3'/%3E%3Crect x='10' y='18' width='44' height='10' rx='3' fill='%23ffcc29'/%3E%3Crect x='29' y='18' width='6' height='34' fill='%230b5d3f'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=20261026c">
 </head>
 <body>
   <header class="hero">
+    <div class="hero-deco" aria-hidden="true">
+      <span class="float f1">🎄</span>
+      <span class="float f2">💍</span>
+      <span class="float f3">🎁</span>
+      <span class="float f4">🌴</span>
+      <span class="float f5">☀️</span>
+      <span class="float f6">🥂</span>
+      <span class="float f7">✨</span>
+      <span class="float f8">💛</span>
+    </div>
     <div class="wrap hero-inner">
       <div class="hero-top">
         <span class="eyebrow" data-t="eyebrow"></span>
@@ -24,13 +37,53 @@
           <button type="button" class="lang-opt" data-lang="en" lang="en">English</button>
         </div>
       </div>
-      <p class="couple" id="couple"></p>
+      <p class="couple" id="couple" translate="no"></p>
       <h1 class="title" data-t="title"></h1>
       <div class="intro" id="intro"></div>
+      <p class="countdown" id="countdown" hidden></p>
     </div>
+    <div class="waves" aria-hidden="true"></div>
   </header>
 
   <main class="wrap">
+    <section class="scoreboard" aria-label="Placar">
+      <div class="score-card progress-card">
+        <div class="progress-top">
+          <span class="big-num" id="done-num">0</span>
+          <span class="of" id="progress-label"></span>
+        </div>
+        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" id="bar">
+          <span class="bar-fill" id="bar-fill"></span>
+        </div>
+        <p class="progress-sub" id="progress-sub"></p>
+      </div>
+
+      <div class="score-card battle-card">
+        <div class="card-head">
+          <h2 class="card-title" data-t="battle_title"></h2>
+          <p class="card-sub" data-t="battle_sub"></p>
+        </div>
+        <div class="battle">
+          <div class="team team-b">
+            <span class="flag">🇧🇷</span>
+            <span class="team-name" data-t="team_bruna"></span>
+            <span class="team-score" id="score-b">0</span>
+          </div>
+          <span class="vs">×</span>
+          <div class="team team-c">
+            <span class="flag">🇺🇸</span>
+            <span class="team-name" data-t="team_calvin"></span>
+            <span class="team-score" id="score-c">0</span>
+          </div>
+        </div>
+        <div class="tug" aria-hidden="true">
+          <span class="tug-b" id="tug-b"></span>
+          <span class="tug-knot" id="tug-knot">🎀</span>
+          <span class="tug-c" id="tug-c"></span>
+        </div>
+      </div>
+    </section>
+
     <section class="how" aria-labelledby="how-title">
       <h2 id="how-title" class="h2" data-t="how_title"></h2>
       <ol class="steps" id="steps"></ol>
@@ -38,13 +91,24 @@
 
     <div id="offline" class="notice" hidden></div>
 
-    <section aria-labelledby="available-title">
+    <section aria-labelledby="available-title" id="gifts">
       <div class="section-head">
         <h2 id="available-title" class="h2" data-t="available"></h2>
         <span class="count" id="available-count"></span>
       </div>
+      <div class="filters" id="filters" role="toolbar" aria-label="Filtros"></div>
       <div class="grid" id="available"></div>
       <p class="empty" id="none-left" hidden data-t="none_left"></p>
+      <p class="empty" id="filter-empty" hidden data-t="filter_empty"></p>
+    </section>
+
+    <section class="leaderboard" aria-labelledby="lb-title">
+      <div class="section-head">
+        <h2 id="lb-title" class="h2" data-t="leaderboard_title"></h2>
+        <span class="trophy" aria-hidden="true">🏆</span>
+      </div>
+      <ol class="lb" id="lb"></ol>
+      <p class="empty lb-empty" id="lb-empty" data-t="leaderboard_empty"></p>
     </section>
 
     <section aria-labelledby="given-title" class="given-section" id="given-section" hidden>
@@ -52,20 +116,23 @@
         <h2 id="given-title" class="h2" data-t="given"></h2>
       </div>
       <p class="sub" data-t="given_sub"></p>
-      <ul class="given" id="given"></ul>
+      <ul class="mural" id="given"></ul>
     </section>
   </main>
 
   <footer class="foot">
+    <div class="waves waves-top" aria-hidden="true"></div>
     <div class="wrap">
       <p data-t="footer"></p>
+      <p class="foot-emoji" aria-hidden="true">🇧🇷 💍 🇺🇸</p>
     </div>
   </footer>
 
+  <canvas id="confetti" aria-hidden="true"></canvas>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="js/config.js"></script>
-  <script src="js/content.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/config.js?v=20261026c"></script>
+  <script src="js/content.js?v=20261026c"></script>
+  <script src="js/app.js?v=20261026c"></script>
 </body>
 </html>
