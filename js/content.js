@@ -102,11 +102,11 @@ window.CONTENT = {
       why:  { pt: "Vidro preto, acendimento automático. O coração da cozinha.", en: "Black glass, auto ignition. The heart of the kitchen." },
     },
     {
-      id: "cama-jasmim", qty: 1, price: 400, image: "images/cama-jasmim.jpg",
+      id: "cama-jasmim", qty: 2, price: 400, image: "images/cama-jasmim.jpg",
       url: "https://www.madeiramadeira.com.br/-478987534.html",
       store: "MadeiraMadeira",
       name: { pt: "Cama de casal Jasmim, madeira maciça", en: "Jasmim solid-wood double bed" },
-      why:  { pt: "Eucalipto maciço, cor mel. Para o quarto principal.", en: "Solid eucalyptus, honey finish. For the main bedroom." },
+      why:  { pt: "Eucalipto maciço, cor mel. Uma para cada quarto.", en: "Solid eucalyptus, honey finish. One for each bedroom." },
     },
     {
       id: "beliche", qty: 1, price: 1593, image: "images/beliche-woodstore.jpg",
@@ -116,11 +116,11 @@ window.CONTENT = {
       why:  { pt: "Pinus maciço. Para a família toda caber quando vier visitar.", en: "Solid pine. So the whole family fits when they visit." },
     },
     {
-      id: "colchao-casal", qty: 2, price: 539, image: "images/colchao-casal-ortobom.jpg",
+      id: "colchao-casal", qty: 3, price: 539, image: "images/colchao-casal-ortobom.jpg",
       url: "https://www.madeiramadeira.com.br/colchao-casal-ortobom-d33-iso-100-18x138x188-1798079.html",
       store: "MadeiraMadeira",
       name: { pt: "Colchão de casal Ortobom ISO 100 D33", en: "Ortobom ISO 100 D33 double mattress" },
-      why:  { pt: "Um para a cama de casal e um para a parte de baixo do beliche.", en: "One for the double bed, one for the bottom of the bunk bed." },
+      why:  { pt: "Para as duas camas de casal e a parte de baixo do beliche.", en: "For the two double beds and the bottom of the bunk bed." },
     },
     {
       id: "colchoes-solteiro", qty: 2, price: 900, image: "images/colchoes-solteiro-ortobom.jpg",
@@ -149,13 +149,6 @@ window.CONTENT = {
       store: "Shopee",
       name: { pt: "Chuveiro Lorenzetti Maxi Ducha Ultra 5500W (220V)", en: "Lorenzetti Maxi Ducha Ultra electric shower, 5500W (220V)" },
       why:  { pt: "Um para cada banheiro.", en: "One for each bathroom." },
-    },
-    {
-      id: "torneira-cozinha", qty: 1, price: 78, image: "images/torneira-cozinha-lorenzetti.jpg",
-      url: "https://www.madeiramadeira.com.br/torneira-cozinha-mesa-lorenzetti-bica-movel-flatt-cromada-2811550.html",
-      store: "MadeiraMadeira",
-      name: { pt: "Torneira de cozinha Lorenzetti Flatt, bica móvel", en: "Lorenzetti Flatt kitchen tap, swivel spout" },
-      why:  { pt: "Cromada, de bancada. Para a pia da cozinha.", en: "Chrome, countertop. For the kitchen sink." },
     },
     {
       id: "torneira-lavatorio", qty: 2, price: 50, image: "images/torneira-lavatorio-dourada.jpg",
