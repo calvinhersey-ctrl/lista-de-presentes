@@ -1,5 +1,7 @@
 # Lista de presentes · Bruna & Calvin
 
+Live at https://calvinhersey-ctrl.github.io/lista-de-presentes/ (add #pt or #en to force a language).
+
 A one-page gift list (Portuguese and English). Family pick a gift, leave their name, and the
 item moves to "Already given" for everyone, so nothing gets bought twice.
 
@@ -9,7 +11,13 @@ item moves to "Already given" for everyone, so nothing gets bought twice.
 - `supabase/migrations/` – the database tables and the claim/unclaim functions.
 - `images/` – product photos.
 
-## Set up the shared list (once)
+## Publish a change
+
+```bash
+./scripts/publish.sh
+```
+
+## Set up the shared list (once, already done)
 
 ```bash
 supabase projects create lista-de-presentes --org-id usxdyjptlolptuswfcbe --region us-west-1 --db-password "$(cat .secrets/db-password)"
