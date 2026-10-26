@@ -123,17 +123,23 @@
   let busy = false;
   let filter = "all";
   let animateNext = true; // play entrance animations on first paint and filter changes only
+  let loadedOnce = false;  // has the shared list loaded at least once?
+  let loadFailed = false;
 
   async function refresh() {
     try {
       const list = (await backend.list() || []).filter(c => GIFT_BY_ID.has(c.gift_id));
+      const wasFailed = loadFailed;
+      loadedOnce = true;
+      loadFailed = false;
       const key = JSON.stringify(list.map(c => [c.id, c.side]));
-      if (key === claimsKey) return; // nothing changed, don't disturb anyone typing
+      if (key === claimsKey && !wasFailed) return; // nothing changed, don't disturb anyone typing
       claims = list;
       claimsKey = key;
       render();
     } catch (e) {
-      // keep showing the last good list
+      // Keep the last good list. If it never loaded, say so: otherwise every gift looks free.
+      if (!loadedOnce && !loadFailed) { loadFailed = true; render(); }
     }
   }
 
@@ -239,6 +245,9 @@
     const days = daysToChristmas();
     cd.textContent = t.countdown(days);
     cd.hidden = false;
+    const le = document.getElementById("load-error");
+    le.hidden = !loadFailed;
+    le.textContent = t.load_error;
     const off = document.getElementById("offline");
     off.hidden = ONLINE;
     off.textContent = t.offline;

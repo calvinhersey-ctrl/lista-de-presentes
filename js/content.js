@@ -61,6 +61,7 @@ window.CONTENT = {
       filter_empty: "Nada por aqui agora. Tente outro filtro.",
       step_icons: ["🎁", "✍️", "📦"],
       confetti_note: "Você está no placar!",
+      load_error: "⚠️ Não conseguimos carregar a lista agora. Recarregue a página antes de comprar, para ter certeza de que ninguém já escolheu o presente.",
     },
     en: {
       lang_name: "English",
@@ -118,6 +119,7 @@ window.CONTENT = {
       filter_empty: "Nothing here right now. Try another filter.",
       step_icons: ["🎁", "✍️", "📦"],
       confetti_note: "You're on the board!",
+      load_error: "⚠️ We couldn't load the list right now. Please reload the page before buying, so you know nobody has picked the gift already.",
     },
   },
 
