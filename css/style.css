@@ -65,21 +65,31 @@ button { font: inherit; }
   padding-block: 28px 44px;
 }
 .hero-inner { display: grid; gap: 14px; }
-.hero-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.hero-top { display: flex; justify-content: space-between; align-items: center; gap: 10px 12px; flex-wrap: wrap; }
 .eyebrow {
   font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
   color: var(--sun);
 }
-.lang-toggle {
-  background: rgba(255, 255, 255, .14);
-  color: #fff;
+.lang-switch {
+  display: inline-flex;
+  background: rgba(255, 255, 255, .12);
   border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+.lang-opt {
+  background: transparent;
+  color: #fff;
+  border: 0;
   border-radius: 999px;
   padding: 6px 14px;
   font-size: 14px; font-weight: 600;
   cursor: pointer;
+  opacity: .8;
 }
-.lang-toggle:hover { background: rgba(255, 255, 255, .24); }
+.lang-opt:hover { opacity: 1; background: rgba(255, 255, 255, .12); }
+.lang-opt.is-on { background: #fff; color: #0f6b4a; opacity: 1; }
 .couple {
   margin: 0;
   font-family: var(--display);

@@ -22,6 +22,10 @@
   function setLang(next) {
     lang = next;
     try { localStorage.setItem(LS_LANG, lang); } catch (e) {}
+    // Keep the shared link clean: drop any #pt / #en once someone picks a language.
+    if (location.hash) {
+      try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+    }
     document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
     render();
   }
@@ -138,9 +142,11 @@
     document.getElementById("couple").textContent = C.couple;
     document.getElementById("intro").innerHTML = t.intro.map(p => `<p>${esc(p)}</p>`).join("");
     document.getElementById("steps").innerHTML = t.how_steps.map(s => `<li>${esc(s)}</li>`).join("");
-    const lt = document.getElementById("lang-toggle");
-    lt.textContent = t.switch_to;
-    lt.setAttribute("aria-label", t.switch_to);
+    document.querySelectorAll(".lang-opt").forEach(b => {
+      const on = b.getAttribute("data-lang") === lang;
+      b.classList.toggle("is-on", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
     const off = document.getElementById("offline");
     off.hidden = ONLINE;
     off.textContent = t.offline;
@@ -260,8 +266,10 @@
       await refresh();
       return;
     }
-    if (ev.target.closest("#lang-toggle")) {
-      setLang(lang === "pt" ? "en" : "pt");
+    const langBtn = ev.target.closest("[data-lang]");
+    if (langBtn) {
+      const next = langBtn.getAttribute("data-lang");
+      if (next !== lang) setLang(next);
     }
   });
 
