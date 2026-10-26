@@ -40,3 +40,7 @@ Honest take: the Lucky one is proven and fine for the price, just not real stain
 | Kit 2 mesas de cabeceira Palma (Eggers) | R$57 | Shopee, 4.8★ / 55.8k, 100k+ sold | Keep. Low (45 cm), fragile feet. |
 | Kit 2 mesas laterais pé palito (Kelan) | R$46–68 | Shopee, 4.8★ / 21k, 30k+ sold | Keep. Small (29 cm). |
 Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double mattress x3.
+
+## 26 Oct 2026, later
+- Kitchen tap now: Haolian gourmet pull-out spray tap, R$68, Shopee, 4.9★ / 3.1k, 20k+ sold, ABS+metal, 3-month warranty. https://shopee.com.br/product/1103633550/28731475565 (Lorenzetti Loren Flex dropped: bends but doesn't pull out, and R$196).
+- Guarda-roupa Bélgica com espelho (Santos Andirá official Shopee store, 452 sold). Shopee page showed NO price in two tries; listed at R$790 approx (Bélgica without mirror is R$629–745 elsewhere). https://shopee.com.br/product/1097902002/23998900565
