@@ -66,3 +66,7 @@ Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double matt
 ## 26 Oct 2026, sofa back + TV
 - Sofá Lívia (bege) back on the list.
 - TV: TCL 65C6K QD-Mini LED 144Hz, Casas Bahia official Shopee store, R$3,771 Pix (R$4,299 card), 4.9★ / 119, 12-month warranty. Alternatives seen: LG 65 QNED70 Mini LED R$3,403 Pix (fewer zones), Samsung M75H 65 Mini LED R$3,661 (4.6★).
+
+## 26 Oct 2026, mattress fix
+- Bicama Funny takes 78x188, pull-out max 14 cm. Added: Kit 2 colchões D33 78x188x12 (Bom_Sono.TR, Shopee), R$451 Pix / R$500, 4.8★ / 298, 567 sold.
+- Top bunk needs one 88x188: Ortobom ISO 100 D33 88x188x18 single, R$404, MadeiraMadeira (Market Sales Online), 285 reviews. Replaces 2x Ortobom single kits (R$1,800).
