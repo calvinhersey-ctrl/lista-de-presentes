@@ -137,11 +137,11 @@ window.CONTENT = {
       why:  { pt: "Sofá de dia, duas camas à noite. Para o quarto de hóspedes.", en: "A sofa by day, two beds by night. For the guest room." },
     },
     {
-      id: "mesa-jantar", qty: 1, price: 560, image: "images/mesa-provenza.jpg",
-      url: "https://www.madeiramadeira.com.br/-104155691.html",
+      id: "mesa-jantar", qty: 1, price: 1228, image: "images/mesa-provenza-6.jpg",
+      url: "https://www.madeiramadeira.com.br/mesa-de-jantar-6-cadeiras-mel-madeira-macica-provenza-250207794.html",
       store: "MadeiraMadeira",
-      name: { pt: "Mesa de jantar Provenza com 4 cadeiras", en: "Provenza dining table with 4 chairs" },
-      why:  { pt: "Madeira maciça. Para os almoços de domingo.", en: "Solid wood. For Sunday lunches." },
+      name: { pt: "Mesa de jantar Provenza com 6 cadeiras", en: "Provenza dining table with 6 chairs" },
+      why:  { pt: "Madeira maciça, cor mel, mesa de 140 cm. Para os almoços de domingo com a família toda.", en: "Solid wood, honey colour, 140 cm table. For Sunday lunches with the whole family." },
     },
     {
       id: "chuveiro", qty: 2, price: 80, image: "images/chuveiro-lorenzetti.jpg",
@@ -162,7 +162,7 @@ window.CONTENT = {
       url: "https://shopee.com.br/product/296813643/18399194308",
       store: "Shopee (Adonai Estofados)",
       name: { pt: "Sofá Lívia 3 lugares, retrátil e reclinável, 1,80 m", en: "Lívia 3-seat sofa, extending and reclining, 1.80 m" },
-      why:  { pt: "Suede, com molas. Para a sala. O frete vem à parte (uns R$ 130).", en: "Suede, sprung seat. For the living room. Shipping is extra (about R$130)." },
+      why:  { pt: "Cor bege, suede, com molas. Para a sala. O frete vem à parte (uns R$ 130).", en: "Beige suede, sprung seat. For the living room. Shipping is extra (about R$130)." },
     },
     {
       id: "escrivaninha", qty: 1, price: 80, image: "images/escrivaninha-bonatto.jpg",

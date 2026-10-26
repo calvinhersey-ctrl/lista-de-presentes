@@ -47,3 +47,7 @@ Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double matt
 
 ## 26 Oct 2026, mirror
 - Espelho corpo inteiro bisotê 140x40, R$222, MadeiraMadeira seller espelhobarato.com (160+ sales, flagged "entrega com atraso"), 6 reviews, 3-month warranty. Shopee alternatives were similar price or smaller, kept this one.
+
+## 26 Oct 2026, dining table + sofa colour
+- Dining table: Provenza 6 cadeiras (Amoudi, Casa Aberta Brasil, R$1,228, 140x74) replaces the 4-seat Provenza. Bruna had sent the Milena table (table only, really seats 4).
+- Sofá Lívia: colour Bege.
