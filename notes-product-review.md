@@ -54,3 +54,6 @@ Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double matt
 
 ## 26 Oct 2026, fridge
 - Electrolux TF38 Frost Free Duplex 320L, 220V, R$2,199 after voucher (R$2,299 otherwise) + ~R$20 frete, Electrolux official Shopee store, 4.9★ / 2.3k, 3k+ sold, 12-month warranty. Cheaper manual-defrost options (Midea 294L, Consul CRD37) were only ~R$100 less, so frost free wins. Next step up: Consul CRM44 377L ~R$2,575, Electrolux IF41 380L inverter ~R$2,649.
+
+## 26 Oct 2026, microwave
+- Electrolux MT30S 20L, 220V, R$524 after voucher (R$549 otherwise), free shipping with voucher, Electrolux official Shopee store, 4.9★ / 14.5k, 20k+ sold. Cheaper: Britânia BMO23 20L R$424 Pix. Bigger: Electrolux MEO44 34L ~R$621 (not the official store).

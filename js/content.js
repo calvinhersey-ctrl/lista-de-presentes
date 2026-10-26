@@ -109,6 +109,13 @@ window.CONTENT = {
       why:  { pt: "Frost free, não precisa descongelar. Branca. Escolha a opção 220V na loja.", en: "Frost-free, no defrosting. White. Pick the 220V option in the store." },
     },
     {
+      id: "microondas", qty: 1, price: 524, image: "images/microondas-electrolux-mt30s.jpg",
+      url: "https://shopee.com.br/product/1526836548/22794554573",
+      store: "Shopee (loja oficial Electrolux)",
+      name: { pt: "Micro-ondas Electrolux 20 L (MT30S), 220V", en: "Electrolux 20 L microwave (MT30S), 220V" },
+      why:  { pt: "Inox espelhado, função tira-odor. Escolha a opção 220V na loja.", en: "Mirrored stainless finish, odour-removal setting. Pick the 220V option in the store." },
+    },
+    {
       id: "cama-jasmim", qty: 2, price: 400, image: "images/cama-jasmim.jpg",
       url: "https://www.madeiramadeira.com.br/-478987534.html",
       store: "MadeiraMadeira",
