@@ -335,7 +335,7 @@ main { display: grid; gap: 52px; padding-block: 0 64px; }
   padding: 10px 12px; overflow-wrap: anywhere; user-select: all;
 }
 .pay-copy { padding: 10px 14px; font-size: 15px; text-decoration: none; }
-@media (max-width: 480px) { .pay-tag { flex-basis: 100%; } .pay-value { flex-basis: 0; flex-grow: 1; } }
+@media (max-width: 480px) { .pay-tag { flex-basis: 100%; } .pay-value { flex-basis: 100%; } .pay-copy { flex: 1 1 auto; } }
 
 .notice { background: var(--sun-soft); color: var(--ink); border-radius: 12px; padding: 10px 14px; font-size: 15px; }
 .notice-warn { background: #fde3df; color: #7a1d12; font-weight: 600; border: 1.5px solid #f3a99c; }

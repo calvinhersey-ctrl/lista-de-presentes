@@ -65,10 +65,10 @@ window.CONTENT = {
       pay_title: "Prefere mandar o valor?",
       pay_sub: "Sem problema! Mande o valor do presente e a gente compra aqui. Depois é só clicar em “Vou dar este presente” para ele sair da lista.",
       pay_pix: "Pix (no Brasil)",
-      pay_us: "Zelle (nos EUA)",
+      pay_us: "Zelle ou Venmo (nos EUA)",
       pay_pix_name: "Chave Pix da Bruna",
       pay_pix_phone: "celular",
-      pay_us_name: "Zelle do Calvin",
+      pay_us_name: "Zelle / Venmo do Calvin",
       pay_copy: "Copiar",
       pay_copied: "Copiado! ✅",
       pay_open_venmo: "Abrir no Venmo",
@@ -134,10 +134,10 @@ window.CONTENT = {
       pay_title: "Rather send money?",
       pay_sub: "No problem! Send the gift amount and we'll buy it here. Then click “I'll give this gift” so it comes off the list.",
       pay_pix: "Pix (in Brazil)",
-      pay_us: "Zelle (in the US)",
+      pay_us: "Zelle or Venmo (in the US)",
       pay_pix_name: "Bruna's Pix key",
       pay_pix_phone: "phone number",
-      pay_us_name: "Calvin's Zelle",
+      pay_us_name: "Calvin's Zelle / Venmo",
       pay_copy: "Copy",
       pay_copied: "Copied! ✅",
       pay_open_venmo: "Open in Venmo",
@@ -151,7 +151,7 @@ window.CONTENT = {
     pix_display: "(17) 99635-3060", // optional: how the key is shown on the page
     pix_holder: "",   // optional: name shown on the Pix account, so people know it's right
     zelle: "calvinhersey@gmail.com",        // Calvin's Zelle email or phone
-    venmo: "",        // Calvin's Venmo username, without the @
+    venmo: "CalvinHersey",        // Calvin's Venmo username, without the @
   },
 
   // Reais per US dollar. The page fetches today's rate when it loads; this is only the fallback
