@@ -57,3 +57,8 @@ Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double matt
 
 ## 26 Oct 2026, microwave
 - Electrolux MT30S 20L, 220V, R$524 after voucher (R$549 otherwise), free shipping with voucher, Electrolux official Shopee store, 4.9★ / 14.5k, 20k+ sold. Cheaper: Britânia BMO23 20L R$424 Pix. Bigger: Electrolux MEO44 34L ~R$621 (not the official store).
+
+## 26 Oct 2026, sofa removed; list total
+- Sofá Lívia taken off.
+- Total of the list (price x qty, store prices, shipping not included): R$12,156 for 17 items / 23 units (~US$2,250 at 5.4). Wardrobe is approximate (R$790).
+- Open issue: bicama Funny takes a 78x188 mattress, max 14 cm for the pull-out; the Ortobom single kit is 88x188x18.
