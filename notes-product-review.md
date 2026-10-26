@@ -30,3 +30,13 @@ Honest take: the Lucky one is proven and fine for the price, just not real stain
 3. Pratica Clean dourada metal – R$187. https://www.madeiramadeira.com.br/torneira-banheiro-lavatorio-pratica-clean-dourada-gold-metal-922156314.html
 
 ## Quantities as pasted (confirm): 3 and 2 near the casal mattress (unclear), 2 single-mattress kits, 2 showers, 2 gold taps.
+
+## 26 Oct 2026 additions (checked on Shopee, logged in)
+| Item | Price | Seller | Verdict |
+|---|---|---|---|
+| Lorenzetti Loren Flex 1177 kitchen tap, black, flexible silicone spout | R$196 | MadeiraMadeira | Replaces the Flatt. Real brand, 12-yr warranty. https://www.madeiramadeira.com.br/torneira-de-cozinha-lorenzetti-flex-de-mesa-preta-1177-b27-1014326.html |
+| Sofá Lívia 3 lugares retrátil/reclinável 1,80 m (Adonai Estofados) | R$944 Pix / R$1.080 + ~R$130 frete | Shopee, 4.9★ / 5.3k, 8k+ sold, 100% response | Keep. |
+| Escrivaninha Bonatto 1 gaveta | R$80 | Shopee, 4.8★ / 20k, 30k+ sold, shipped by Shopee | Keep. Cheap MDP, 20 kg limit. |
+| Kit 2 mesas de cabeceira Palma (Eggers) | R$57 | Shopee, 4.8★ / 55.8k, 100k+ sold | Keep. Low (45 cm), fragile feet. |
+| Kit 2 mesas laterais pé palito (Kelan) | R$46–68 | Shopee, 4.8★ / 21k, 30k+ sold | Keep. Small (29 cm). |
+Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double mattress x3.
