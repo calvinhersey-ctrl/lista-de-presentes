@@ -5,6 +5,10 @@ cd "$(dirname "$0")/.."
 
 REPO="calvinhersey-ctrl/lista-de-presentes"
 
+echo "→ Checking GitHub login…"
+gh auth status >/dev/null 2>&1 || { echo "Not logged in to GitHub. Run: gh auth login"; exit 1; }
+gh auth setup-git >/dev/null 2>&1 || true   # let git push with the GitHub login, no password prompt
+
 if ! git remote get-url origin >/dev/null 2>&1; then
   echo "→ Creating the GitHub repo and uploading the site…"
   gh repo create "$REPO" --public --source=. --remote=origin --push \
