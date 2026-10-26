@@ -123,6 +123,7 @@
   let busy = false;
   let filter = "all";
   let animateNext = true; // play entrance animations on first paint and filter changes only
+  let usdRate = C.usd_rate || 5; // reais per US dollar; replaced by today's rate when it loads
   let loadedOnce = false;  // has the shared list loaded at least once?
   let loadFailed = false;
 
@@ -150,6 +151,13 @@
       .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
   }
   function brl(n) { return lang === "pt" ? "R$ " + n.toLocaleString("pt-BR") : "R$" + n.toLocaleString("en-US"); }
+  function usd(n) {
+    const v = Math.round(n / usdRate);
+    return lang === "pt" ? "US$ " + v.toLocaleString("pt-BR") : "US$" + v.toLocaleString("en-US");
+  }
+  function rateText() {
+    return usdRate.toLocaleString(lang === "pt" ? "pt-BR" : "en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
   function claimsFor(giftId) { return claims.filter(c => c.gift_id === giftId); }
   function leftOf(g) { return g.qty - claimsFor(g.id).length; }
   function hash(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0; return Math.abs(h); }
@@ -334,7 +342,6 @@
       partial = `<span class="pill">${esc(t.remaining(left))}</span>` +
         (taken.length ? `<p class="partial">${esc(t.gave_by)} ${names}</p>` : "");
     }
-    const usd = lang === "en" ? `<p class="usd">${esc(t.approx)} US$${Math.round(g.price / C.usd_rate).toLocaleString("en-US")}</p>` : "";
     let action;
     if (openForm === g.id) {
       const side = defaultSide();
@@ -366,12 +373,11 @@
           <img src="${esc(g.image)}" alt="${esc(name)}" loading="lazy">
           <span class="room-tag">${ROOM_ICON[g.room] || ""} ${esc(t.filters[g.room] || "")}</span>
           ${g.qty > 1 ? `<span class="qty-tag">×${left}</span>` : ""}
-          <span class="sticker">${brl(g.price)}</span>
+          <span class="sticker"><b>${brl(g.price)}</b><small>≈ ${usd(g.price)}</small></span>
         </div>
         <div class="card-body">
           <h3>${esc(name)}</h3>
           <p class="why">${esc(g.why[lang])}</p>
-          ${usd}
           <a class="store-link" href="${esc(g.url)}" target="_blank" rel="noopener">${esc(t.store)} ↗ <span class="store-name">${esc(g.store)}</span></a>
           ${partial}
           ${action}
@@ -461,6 +467,7 @@
     renderPay();
     renderScore();
 
+    document.getElementById("rate-note").textContent = T().rate_note(rateText());
     const available = C.gifts.filter(g => leftOf(g) > 0);
     renderFilters(available);
     const shown = available.filter(matchesFilter);
@@ -578,6 +585,22 @@
   });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
   if (ONLINE) setInterval(refresh, 20000);
+
+  // ---------- today's exchange rate (free, updates daily; cached for 12 hours) ----------
+  function applyRate(r) {
+    if (typeof r === "number" && r > 2 && r < 15 && Math.abs(r - usdRate) > 0.001) { usdRate = r; render(); }
+  }
+  (function loadRate() {
+    const cached = readJSON("lista.fx", null);
+    if (cached && Date.now() - cached.at < 12 * 3600 * 1000) { usdRate = cached.rate; return; }
+    fetch("https://open.er-api.com/v6/latest/USD")
+      .then(r => r.json())
+      .then(j => {
+        const r = j && j.result === "success" && j.rates && j.rates.BRL;
+        if (typeof r === "number") { writeJSON("lista.fx", { rate: r, at: Date.now() }); applyRate(r); }
+      })
+      .catch(() => {});
+  })();
 
   // ---------- go ----------
   document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";

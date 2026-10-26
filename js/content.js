@@ -61,6 +61,7 @@ window.CONTENT = {
       filter_empty: "Nada por aqui agora. Tente outro filtro.",
       step_icons: ["🎁", "✍️", "📦"],
       confetti_note: "Você está no placar!",
+      rate_note: (r) => `Preços em reais, com o valor aproximado em dólar (US$ 1 ≈ R$ ${r}).`,
       pay_title: "Prefere mandar o valor?",
       pay_sub: "Sem problema! Mande o valor do presente e a gente compra aqui. Depois é só clicar em “Vou dar este presente” para ele sair da lista.",
       pay_pix: "Pix (no Brasil)",
@@ -128,6 +129,7 @@ window.CONTENT = {
       filter_empty: "Nothing here right now. Try another filter.",
       step_icons: ["🎁", "✍️", "📦"],
       confetti_note: "You're on the board!",
+      rate_note: (r) => `Prices are in Brazilian reais, with the rough US dollar amount (US$1 ≈ R$${r}).`,
       pay_title: "Rather send money?",
       pay_sub: "No problem! Send the gift amount and we'll buy it here. Then click “I'll give this gift” so it comes off the list.",
       pay_pix: "Pix (in Brazil)",
@@ -149,8 +151,9 @@ window.CONTENT = {
     venmo: "",        // Calvin's Venmo username, without the @
   },
 
-  // Rough exchange rate used only for the "approx. US$" hint in English.
-  usd_rate: 5.4,
+  // Reais per US dollar. The page fetches today's rate when it loads; this is only the fallback
+  // (checked 26 Oct 2026: US$1 = R$4.99).
+  usd_rate: 5.0,
 
   // The gifts. `id` and `qty` must match supabase/migrations/*_gifts.sql.
   gifts: [
