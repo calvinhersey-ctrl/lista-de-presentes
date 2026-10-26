@@ -310,6 +310,33 @@ main { display: grid; gap: 52px; padding-block: 0 64px; }
   font-family: var(--display); font-weight: 800; font-size: 30px; color: var(--line);
 }
 
+/* ---------- Send money ---------- */
+.paybox {
+  background: linear-gradient(135deg, var(--sun-soft), var(--card) 65%);
+  border: 1.5px solid var(--sun);
+  border-radius: var(--radius);
+  padding: 22px;
+  display: grid; gap: 16px;
+}
+.pay-head .sub { margin: 6px 0 0; }
+.pay-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.pay-card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+  padding: 16px; display: grid; gap: 10px; align-content: start; min-width: 0;
+}
+.pay-kind { margin: 0; font-family: var(--display); font-weight: 800; font-size: 19px; }
+.pay-label { margin: 0; color: var(--muted); font-size: 14px; }
+.pay-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; }
+.pay-tag { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); min-width: 52px; }
+.pay-value {
+  flex: 1 1 160px; min-width: 0;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 15px;
+  background: var(--bg); border: 1.5px dashed var(--line); border-radius: 10px;
+  padding: 10px 12px; overflow-wrap: anywhere; user-select: all;
+}
+.pay-copy { padding: 10px 14px; font-size: 15px; text-decoration: none; }
+@media (max-width: 480px) { .pay-tag { flex-basis: 100%; } .pay-value { flex-basis: 0; flex-grow: 1; } }
+
 .notice { background: var(--sun-soft); color: var(--ink); border-radius: 12px; padding: 10px 14px; font-size: 15px; }
 .notice-warn { background: #fde3df; color: #7a1d12; font-weight: 600; border: 1.5px solid #f3a99c; }
 

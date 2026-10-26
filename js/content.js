@@ -61,6 +61,15 @@ window.CONTENT = {
       filter_empty: "Nada por aqui agora. Tente outro filtro.",
       step_icons: ["🎁", "✍️", "📦"],
       confetti_note: "Você está no placar!",
+      pay_title: "Prefere mandar o valor?",
+      pay_sub: "Sem problema! Mande o valor do presente e a gente compra aqui. Depois é só clicar em “Vou dar este presente” para ele sair da lista.",
+      pay_pix: "Pix (no Brasil)",
+      pay_us: "Zelle ou Venmo (nos EUA)",
+      pay_pix_name: "Chave Pix da Bruna",
+      pay_us_name: "Zelle / Venmo do Calvin",
+      pay_copy: "Copiar",
+      pay_copied: "Copiado! ✅",
+      pay_open_venmo: "Abrir no Venmo",
       load_error: "⚠️ Não conseguimos carregar a lista agora. Recarregue a página antes de comprar, para ter certeza de que ninguém já escolheu o presente.",
     },
     en: {
@@ -119,8 +128,25 @@ window.CONTENT = {
       filter_empty: "Nothing here right now. Try another filter.",
       step_icons: ["🎁", "✍️", "📦"],
       confetti_note: "You're on the board!",
+      pay_title: "Rather send money?",
+      pay_sub: "No problem! Send the gift amount and we'll buy it here. Then click “I'll give this gift” so it comes off the list.",
+      pay_pix: "Pix (in Brazil)",
+      pay_us: "Zelle or Venmo (in the US)",
+      pay_pix_name: "Bruna's Pix key",
+      pay_us_name: "Calvin's Zelle / Venmo",
+      pay_copy: "Copy",
+      pay_copied: "Copied! ✅",
+      pay_open_venmo: "Open in Venmo",
       load_error: "⚠️ We couldn't load the list right now. Please reload the page before buying, so you know nobody has picked the gift already.",
     },
+  },
+
+  // Where people can send money. Leave a field empty to hide it; if all are empty the box is hidden.
+  payment: {
+    pix: "",          // Bruna's Pix key (phone, email, CPF or random key)
+    pix_holder: "",   // optional: name shown on the Pix account, so people know it's right
+    zelle: "",        // Calvin's Zelle email or phone
+    venmo: "",        // Calvin's Venmo username, without the @
   },
 
   // Rough exchange rate used only for the "approx. US$" hint in English.

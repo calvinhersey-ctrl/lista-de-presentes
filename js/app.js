@@ -254,6 +254,40 @@
     document.title = (lang === "pt" ? "Lista de presentes" : "Gift list") + " · " + C.couple;
   }
 
+  function renderPay() {
+    const t = T();
+    const P = C.payment || {};
+    const box = document.getElementById("paybox");
+    const cards = [];
+    if (P.pix) {
+      cards.push(`
+        <div class="pay-card pay-pix">
+          <p class="pay-kind">🇧🇷 ${esc(t.pay_pix)}</p>
+          <p class="pay-label">${esc(t.pay_pix_name)}${P.pix_holder ? ` · <span translate="no">${esc(P.pix_holder)}</span>` : ""}</p>
+          <div class="pay-row"><code class="pay-value" id="pay-pix" translate="no">${esc(P.pix)}</code>
+          <button type="button" class="btn btn-primary pay-copy" data-copy="pay-pix">${esc(t.pay_copy)}</button></div>
+        </div>`);
+    }
+    const us = [];
+    if (P.zelle) us.push(`<div class="pay-row"><span class="pay-tag">Zelle</span><code class="pay-value" id="pay-zelle" translate="no">${esc(P.zelle)}</code>
+      <button type="button" class="btn btn-primary pay-copy" data-copy="pay-zelle">${esc(t.pay_copy)}</button></div>`);
+    if (P.venmo) {
+      const handle = String(P.venmo).replace(/^@/, "");
+      us.push(`<div class="pay-row"><span class="pay-tag">Venmo</span><code class="pay-value" id="pay-venmo" translate="no">@${esc(handle)}</code>
+        <a class="btn btn-primary pay-copy" href="https://venmo.com/u/${encodeURIComponent(handle)}" target="_blank" rel="noopener">${esc(t.pay_open_venmo)}</a></div>`);
+    }
+    if (us.length) {
+      cards.push(`
+        <div class="pay-card pay-us">
+          <p class="pay-kind">🇺🇸 ${esc(t.pay_us)}</p>
+          <p class="pay-label">${esc(t.pay_us_name)}</p>
+          ${us.join("")}
+        </div>`);
+    }
+    box.hidden = cards.length === 0;
+    document.getElementById("pay-grid").innerHTML = cards.join("");
+  }
+
   function renderScore() {
     const t = T();
     const totalUnits = C.gifts.reduce((a, g) => a + g.qty, 0);
@@ -424,6 +458,7 @@
     animateNext = false;
 
     renderStatic();
+    renderPay();
     renderScore();
 
     const available = C.gifts.filter(g => leftOf(g) > 0);
@@ -460,6 +495,16 @@
     }
     if (ev.target.closest("[data-cancel]")) {
       openForm = null; formError = ""; render(); return;
+    }
+    const copyBtn = ev.target.closest("[data-copy]");
+    if (copyBtn) {
+      const el = document.getElementById(copyBtn.getAttribute("data-copy"));
+      const text = el ? el.textContent.trim() : "";
+      const done = () => { const old = copyBtn.textContent; copyBtn.textContent = T().pay_copied; setTimeout(() => { copyBtn.textContent = old; }, 1800); };
+      const select = () => { try { const r = document.createRange(); r.selectNodeContents(el); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); } catch (e) {} };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, select);
+      else select();
+      return;
     }
     const chip = ev.target.closest("[data-filter]");
     if (chip) {
