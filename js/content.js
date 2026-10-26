@@ -67,6 +67,7 @@ window.CONTENT = {
       pay_pix: "Pix (no Brasil)",
       pay_us: "Zelle ou Venmo (nos EUA)",
       pay_pix_name: "Chave Pix da Bruna",
+      pay_pix_phone: "celular",
       pay_us_name: "Zelle / Venmo do Calvin",
       pay_copy: "Copiar",
       pay_copied: "Copiado! ✅",
@@ -135,6 +136,7 @@ window.CONTENT = {
       pay_pix: "Pix (in Brazil)",
       pay_us: "Zelle or Venmo (in the US)",
       pay_pix_name: "Bruna's Pix key",
+      pay_pix_phone: "phone number",
       pay_us_name: "Calvin's Zelle / Venmo",
       pay_copy: "Copy",
       pay_copied: "Copied! ✅",
@@ -145,7 +147,8 @@ window.CONTENT = {
 
   // Where people can send money. Leave a field empty to hide it; if all are empty the box is hidden.
   payment: {
-    pix: "",          // Bruna's Pix key (phone, email, CPF or random key)
+    pix: "17996353060",          // Bruna's Pix key (phone, email, CPF or random key). Copied exactly like this.
+    pix_display: "(17) 99635-3060", // optional: how the key is shown on the page
     pix_holder: "",   // optional: name shown on the Pix account, so people know it's right
     zelle: "",        // Calvin's Zelle email or phone
     venmo: "",        // Calvin's Venmo username, without the @

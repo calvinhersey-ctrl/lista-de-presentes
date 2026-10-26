@@ -271,8 +271,8 @@
       cards.push(`
         <div class="pay-card pay-pix">
           <p class="pay-kind">🇧🇷 ${esc(t.pay_pix)}</p>
-          <p class="pay-label">${esc(t.pay_pix_name)}${P.pix_holder ? ` · <span translate="no">${esc(P.pix_holder)}</span>` : ""}</p>
-          <div class="pay-row"><code class="pay-value" id="pay-pix" translate="no">${esc(P.pix)}</code>
+          <p class="pay-label">${esc(t.pay_pix_name)}${/^\+?\d{10,13}$/.test(String(P.pix).replace(/\D/g, "")) && !/@/.test(P.pix) ? ` (${esc(t.pay_pix_phone)})` : ""}${P.pix_holder ? ` · <span translate="no">${esc(P.pix_holder)}</span>` : ""}</p>
+          <div class="pay-row"><code class="pay-value" id="pay-pix" translate="no" data-value="${esc(P.pix)}">${esc(P.pix_display || P.pix)}</code>
           <button type="button" class="btn btn-primary pay-copy" data-copy="pay-pix">${esc(t.pay_copy)}</button></div>
         </div>`);
     }
@@ -506,7 +506,7 @@
     const copyBtn = ev.target.closest("[data-copy]");
     if (copyBtn) {
       const el = document.getElementById(copyBtn.getAttribute("data-copy"));
-      const text = el ? el.textContent.trim() : "";
+      const text = el ? (el.getAttribute("data-value") || el.textContent).trim() : "";
       const done = () => { const old = copyBtn.textContent; copyBtn.textContent = T().pay_copied; setTimeout(() => { copyBtn.textContent = old; }, 1800); };
       const select = () => { try { const r = document.createRange(); r.selectNodeContents(el); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); } catch (e) {} };
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, select);
