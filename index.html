@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lista de presentes · Bruna & Calvin</title>
+  <meta name="description" content="Lista de presentes de casamento e Natal de Bruna e Calvin. Escolha um presente e deixe seu nome.">
+  <meta property="og:title" content="Lista de presentes · Bruna & Calvin">
+  <meta property="og:description" content="Escolha um presente para a nossa casa nova no Brasil e deixe seu nome.">
+  <meta property="og:image" content="images/mesa-provenza.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f6b4a'/%3E%3Crect x='14' y='26' width='36' height='26' rx='3' fill='%23faf8f3'/%3E%3Crect x='10' y='18' width='44' height='10' rx='3' fill='%23f2c230'/%3E%3Crect x='29' y='18' width='6' height='34' fill='%230f6b4a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-top">
+        <span class="eyebrow" data-t="eyebrow"></span>
+        <button type="button" id="lang-toggle" class="lang-toggle" aria-label="Switch language"></button>
+      </div>
+      <p class="couple" id="couple"></p>
+      <h1 class="title" data-t="title"></h1>
+      <div class="intro" id="intro"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="h2" data-t="how_title"></h2>
+      <ol class="steps" id="steps"></ol>
+    </section>
+
+    <div id="offline" class="notice" hidden></div>
+
+    <section aria-labelledby="available-title">
+      <div class="section-head">
+        <h2 id="available-title" class="h2" data-t="available"></h2>
+        <span class="count" id="available-count"></span>
+      </div>
+      <div class="grid" id="available"></div>
+      <p class="empty" id="none-left" hidden data-t="none_left"></p>
+    </section>
+
+    <section aria-labelledby="given-title" class="given-section" id="given-section" hidden>
+      <div class="section-head">
+        <h2 id="given-title" class="h2" data-t="given"></h2>
+      </div>
+      <p class="sub" data-t="given_sub"></p>
+      <ul class="given" id="given"></ul>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p data-t="footer"></p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
