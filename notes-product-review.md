@@ -44,3 +44,6 @@ Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double matt
 ## 26 Oct 2026, later
 - Kitchen tap now: Haolian gourmet pull-out spray tap, R$68, Shopee, 4.9★ / 3.1k, 20k+ sold, ABS+metal, 3-month warranty. https://shopee.com.br/product/1103633550/28731475565 (Lorenzetti Loren Flex dropped: bends but doesn't pull out, and R$196).
 - Guarda-roupa Bélgica com espelho (Santos Andirá official Shopee store, 452 sold). Shopee page showed NO price in two tries; listed at R$790 approx (Bélgica without mirror is R$629–745 elsewhere). https://shopee.com.br/product/1097902002/23998900565
+
+## 26 Oct 2026, mirror
+- Espelho corpo inteiro bisotê 140x40, R$222, MadeiraMadeira seller espelhobarato.com (160+ sales, flagged "entrega com atraso"), 6 reviews, 3-month warranty. Shopee alternatives were similar price or smaller, kept this one.
