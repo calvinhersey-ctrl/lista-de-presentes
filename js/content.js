@@ -193,6 +193,13 @@ window.CONTENT = {
       why:  { pt: "Branco, 119 cm de largura. Preço aproximado, confira na loja.", en: "White, 119 cm wide. Price is approximate, check the store." },
     },
     {
+      id: "espelho", qty: 1, price: 222, image: "images/espelho-corpo-inteiro.jpg",
+      url: "https://www.madeiramadeira.com.br/espelho-grande-corpo-inteiro-lapidado-com-bisote-140x40cm-closet-659793637.html?seller=24781",
+      store: "MadeiraMadeira (espelhobarato.com)",
+      name: { pt: "Espelho de corpo inteiro com bisotê, 140 x 40 cm", en: "Full-length bevelled mirror, 140 x 40 cm" },
+      why:  { pt: "Vidro lapidado, sem moldura, de parede. Para o quarto.", en: "Polished bevelled glass, frameless, wall-mounted. For the bedroom." },
+    },
+    {
       id: "torneira-lavatorio", qty: 2, price: 50, image: "images/torneira-lavatorio-dourada.jpg",
       url: "https://shopee.com.br/product/876954452/23097068209",
       store: "Shopee",
