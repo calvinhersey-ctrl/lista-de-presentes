@@ -16,6 +16,13 @@ if ! git remote get-url origin >/dev/null 2>&1; then
   echo "→ Switching on GitHub Pages…"
   gh api -X POST "repos/$REPO/pages" -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/' >/dev/null
 else
+  # Stamp the page's script and style links with the time, so nobody's browser keeps an old copy of the list.
+  STAMP="$(date +%Y%m%d%H%M)"
+  sed -i '' -E "s/\?v=[A-Za-z0-9]+/?v=$STAMP/g" index.html
+  if ! git diff --quiet -- index.html; then
+    git add index.html
+    git commit -q -m "publish: asset version $STAMP"
+  fi
   echo "→ Uploading the latest version…"
   git push origin main
 fi
