@@ -95,3 +95,9 @@ Open: house voltage (127 V vs 220 V) decides the oven/washer version; fridge, mi
 
 ## 26 Oct 2026, bicama mattresses x2
 - Kit 2 colchões D33 78x188x12 now qty 2 (Calvin). List total R$23,184.
+
+## 26 Oct 2026, Calvin's cuts
+- Off: washer, kitchen cabinets, oven, hammock.
+- TV stand swapped: Rack 150 cm 2 portas de correr pé palito off white/freijó, R$290, sold and delivered by MadeiraMadeira, 4★ (12), 150 × 65 × 36. (Madesa Dubai was rustic/black.)
+- Wardrobes kept (2x Bélgica solteiro 119 cm) after checking the house model: suite (2.80 × 2.78) takes the bed on the west wall and the wardrobe on the hall-door wall with an 84 cm aisle; bedroom 2 (2.92 × 3.66) takes it on the long wall next to the bunk bed, as long as the trundle bed doesn't also go in that room.
+- Sheets kept (Calvin wrote 9 but meant the wardrobes' fit check). List now 28 items.

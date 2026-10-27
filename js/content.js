@@ -312,27 +312,6 @@ window.CONTENT = {
     },
     // 26 Oct 2026: what the house still needs after comparing the list with the Paraty house, room by room.
     {
-      id: "maquina-lavar", room: "externa", qty: 1, price: 1747, image: "images/maquina-de-lavar-electrolux-lda13.jpg",
-      url: "https://www.magazineluiza.com.br/lavadora-de-roupas-electrolux-13kg-cesto-inox-10-programas-de-lavagem-branca-efficient-lda13/p/240441300/ed/lava/",
-      store: "Magazine Luiza",
-      name: { pt: "Máquina de lavar Electrolux Efficient 13 kg (LDA13)", en: "Electrolux Efficient 13 kg washing machine (LDA13)" },
-      why:  { pt: "Cesto inox, 10 programas. Tem versão 127V e 220V, confira a tomada da casa.", en: "Stainless drum, 10 programmes. Comes in 127V and 220V, check the house's outlets." },
-    },
-    {
-      id: "armario-cozinha", room: "cozinha", qty: 1, price: 680, image: "images/armario-cozinha-madesa-emilly.jpg",
-      url: "https://www.magazineluiza.com.br/armario-de-cozinha-completa-com-armario-e-balcao-229cm-emilly-madesa/p/kb9j0e516c/mo/moac/",
-      store: "Magazine Luiza (Madesa)",
-      name: { pt: "Armário de cozinha Madesa Emilly completo, 229 cm", en: "Madesa Emilly complete kitchen cabinet set, 229 cm" },
-      why:  { pt: "Paneleiro, balcão com tampo e armário aéreo. Cor Rustic, combina com as camas. Hoje a cozinha só tem o gabinete da pia.", en: "Pantry unit, base unit with worktop and wall cabinet. Rustic wood tone to match the beds. Today the kitchen only has the sink base." },
-    },
-    {
-      id: "forno", room: "cozinha", qty: 1, price: 445, image: "images/forno-eletrico-nardelli-top60.jpg",
-      url: "https://www.magazineluiza.com.br/forno-eletrico-de-bancada-nardelli-top60-60-litros-preto-127v/p/bej697kk0b/ed/frne/",
-      store: "Magazine Luiza",
-      name: { pt: "Forno elétrico de bancada Nardelli Top 60, 60 L", en: "Nardelli Top 60 countertop electric oven, 60 L" },
-      why:  { pt: "O cooktop não tem forno. Cabe um frango inteiro. Preço da versão 127V; a 220V sai R$ 590.", en: "The cooktop has no oven. Fits a whole chicken. 127V price; the 220V version is R$590." },
-    },
-    {
       id: "purificador", room: "cozinha", qty: 1, price: 490, image: "images/purificador-consul-cpb34a.jpg",
       url: "https://www.magazineluiza.com.br/purificador-de-agua-consul-cpb34afvna-com-refrigeracao-eletronica-cinza-bivolt/p/jf78d42bg0/ep/papd/",
       store: "Magazine Luiza",
@@ -347,11 +326,11 @@ window.CONTENT = {
       why:  { pt: "Para ligar o cooktop no botijão. O botijão a gente compra em Paraty.", en: "Connects the cooktop to the gas bottle. We'll buy the bottle itself in Paraty." },
     },
     {
-      id: "rack-tv", room: "sala", qty: 1, price: 360, image: "images/rack-tv-madesa-dubai.jpg",
-      url: "https://www.madeiramadeira.com.br/rack-madesa-dubai-para-tv-ate-65-polegadas-com-pes-rustic-preto-rustic-691156927.html",
-      store: "MadeiraMadeira (Madesa)",
-      name: { pt: "Rack Madesa Dubai para TV até 65\", 160 cm", en: "Madesa Dubai TV stand for up to 65\", 160 cm" },
-      why:  { pt: "Onde a TV vai ficar. Cor Rustic com preto, 160 x 53 x 39 cm.", en: "Where the TV will sit. Rustic wood and black, 160 x 53 x 39 cm." },
+      id: "rack-tv", room: "sala", qty: 1, price: 290, image: "images/rack-tv-off-white-freijo.jpg",
+      url: "https://www.madeiramadeira.com.br/rack-para-tv-ate-65-polegadas-150cm-2-portas-de-correr-pe-palito-off-white-freijo-897510.html",
+      store: "MadeiraMadeira",
+      name: { pt: "Rack para TV até 65\", 150 cm, off white e freijó", en: "TV stand for up to 65\", 150 cm, off-white and light wood" },
+      why:  { pt: "Onde a TV vai ficar. Claro, com pés palito, combina com o sofá bege. 150 x 65 x 36 cm.", en: "Where the TV will sit. Light colours with tapered legs, goes with the beige sofa. 150 x 65 x 36 cm." },
     },
     {
       id: "ventilador-teto", room: "sala", qty: 4, price: 269, image: "images/ventilador-teto-ventisol-fenix.jpg",
@@ -380,13 +359,6 @@ window.CONTENT = {
       store: "MadeiraMadeira (Fino Inox)",
       name: { pt: "Kit de acessórios para banheiro, 4 peças, inox dourado", en: "Bathroom accessory set, 4 pieces, gold stainless steel" },
       why:  { pt: "Porta-toalhas, papeleira e cabide, dourados como as torneiras. Um kit por banheiro.", en: "Towel rails, paper holder and hook, gold like the taps. One set per bathroom." },
-    },
-    {
-      id: "rede", room: "externa", qty: 1, price: 57, image: "images/rede-de-descanso-casal.jpg",
-      url: "https://www.magazineluiza.com.br/rede-de-dormir-descanso-azul-casal-direto-do-fabricante-melhor-qualidade-lojas-walnut/p/kh6fa70g4a/es/redd/",
-      store: "Magazine Luiza (Lojas Walnut)",
-      name: { pt: "Rede de descanso casal, algodão", en: "Double cotton hammock" },
-      why:  { pt: "Para a varanda da frente. Tarde de domingo em Paraty.", en: "For the front porch. Sunday afternoons in Paraty." },
     },
     {
       id: "varal", room: "externa", qty: 1, price: 69, image: "images/varal-de-chao-kontuz.jpg",
