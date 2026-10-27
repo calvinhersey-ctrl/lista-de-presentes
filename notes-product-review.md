@@ -105,3 +105,21 @@ Open: house voltage (127 V vs 220 V) decides the oven/washer version; fridge, mi
 - TV swapped (Calvin): TCL 55C6K QD-Mini LED 4K 144Hz, R$3,220, Amazon (sold by Fast Shop BR, shipped by Amazon), 4.7★ / 387. Same model as the 65C6K it replaces (R$3,771 on Shopee), one size down. Also seen: TCL 55P7K QLED R$2,622 (4.8★ / 536, not Mini LED), TCL 55P8K R$1,299 (price looked too low), LG 65UA7500 R$3,149, Hisense 65Q6QV R$3,214, TCL 65P7L R$3,419. List total R$19,535.
 - Added (Calvin's link): Arara de roupas dupla, pinus reflorestado, 110 x 170 x 31.5 cm, R$215 Pix, MadeiraMadeira seller Technox (16 reviews, 6k+ sales), 90-day warranty. The listing covers a simples (80 cm) and a dupla (110 cm) model; this id is the dupla. List 28 items, R$19,750.
 - Added (Calvin's link): Banco baú Luquinha, MDF/MDP 12 mm, off white + cedro, tampo basculante com amortecedor, rodízios de gel, 60.2 x 38.5 cm, R$230 Pix, MadeiraMadeira seller Ofertamo (no reviews shown). List 29 items, R$19,980.
+
+## 26 Oct 2026, delivery to Paraty (CEP 23970-000), MadeiraMadeira "Receba até" if ordered today
+| Item | Arrives by | Days |
+|---|---|---|
+| Guarda-roupa Bélgica solteiro (Esplanada) | 4 Dec | 39 |
+| Mesa Provenza 6 cadeiras | 1 Dec | 36 |
+| Rack TV off white/freijó | 1 Dec | 36 |
+| Arara pinus (Technox) | 30 Nov | 35 |
+| Cama Jasmim | 24 Nov | 29 |
+| Bicama Funny | 24 Nov | 29 |
+| Banco baú (Ofertamo) | 24 Nov | 29 |
+| Beliche Woodstore | 17 Nov | 22 |
+| Colchão casal Ortobom | 13 Nov | 18 |
+| Espelho | 12 Nov | 17 |
+| Kit banheiro dourado | 11 Nov | 16 |
+| Colchão solteiro Ortobom | 10 Nov | 15 |
+Not checkable without login: Shopee (12 items, typically 1–3 weeks), Magalu Full (4 items, typically 1–2 weeks); Amazon TV showed a next-day estimate for the browser's default city, not Paraty.
+Rule used for order-by dates: lead time + 1 week margin before 25 Dec (Black Friday 27 Nov slows carriers).
