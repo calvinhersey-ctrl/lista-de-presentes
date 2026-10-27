@@ -14,9 +14,9 @@
   const REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const FUND_ID = "__fund";
-  const ROOM_ICON = { cozinha: "🍳", sala: "🛋️", quartos: "🛏️", banheiro: "🚿" };
-  const FILTERS = ["all", "cozinha", "sala", "quartos", "banheiro", "budget"];
-  const FILTER_ICON = { all: "🏠", cozinha: "🍳", sala: "🛋️", quartos: "🛏️", banheiro: "🚿", budget: "💸" };
+  const ROOM_ICON = { cozinha: "🍳", sala: "🛋️", quartos: "🛏️", banheiro: "🚿", externa: "🧺" };
+  const FILTERS = ["all", "cozinha", "sala", "quartos", "banheiro", "externa", "budget"];
+  const FILTER_ICON = { all: "🏠", cozinha: "🍳", sala: "🛋️", quartos: "🛏️", banheiro: "🚿", externa: "🧺", budget: "💸" };
   const BUDGET_MAX = 150;
   const TEAM_FLAG = { bruna: "🇧🇷", calvin: "🇺🇸" };
   const QUICK = { BRL: [50, 100, 200, 500], USD: [20, 50, 100, 200] };

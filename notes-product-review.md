@@ -70,3 +70,25 @@ Dropped: Lorenzetti Flatt (Bruna didn't like it). Jasmim bed now x2, double matt
 ## 26 Oct 2026, mattress fix
 - Bicama Funny takes 78x188, pull-out max 14 cm. Added: Kit 2 colchões D33 78x188x12 (Bom_Sono.TR, Shopee), R$451 Pix / R$500, 4.8★ / 298, 567 sold.
 - Top bunk needs one 88x188: Ortobom ISO 100 D33 88x188x18 single, R$404, MadeiraMadeira (Market Sales Online), 285 reviews. Replaces 2x Ortobom single kits (R$1,800).
+
+## 26 Oct 2026, house round two (list vs the Paraty house, room by room)
+Compared the list with the house (new layout: suite in the old dining room, living + dining in one 3.97 × 3.06 m room,
+kitchen with only the sink base, barbecue porch, laundry still a sketch). Added 12 items; Bruna will say what comes out.
+Shopee needed a login in the browser, so these came from Magazine Luiza (ML, "Full" = delivered by Magalu) and MadeiraMadeira (MM). Prices Pix.
+| Item | Price × qty | Where | Notes |
+|---|---|---|---|
+| Lavadora Electrolux Efficient 13 kg LDA13 | R$1,747 | ML Full, 4.8★ / 2,347 | 127 V and 220 V versions. Alt: Consul 12 kg CWM12AB R$1,599 (4.8★ / 157). |
+| Armário de cozinha Madesa Emilly completa 229 cm, Rustic | R$680 | ML (Madesa, delivered by Magalu), 4.5★ / 5,620 | Paneleiro + balcão com tampo + aéreo, 186 cm high, 1-yr warranty. Kitchen inner wall takes up to 2.40 m. |
+| Forno elétrico Nardelli Top 60, 60 L, 127 V | R$445 | ML Full, 4.6★ / 234 | 220 V version R$590. Cooktop has no oven. |
+| Purificador Consul CPB34A bivolt | R$490 | ML Full, 4.7★ / 2,158 | |
+| Kit regulador de gás com manômetro + mangueira 2 m | R$46 | ML, 4.7★ / 15 | Botijão P13 bought locally. |
+| Rack Madesa Dubai 160 cm, Rustic/preto | R$360 | MM, sold by Madesa, 49 reviews | 160 × 53 × 39. Model's TV wall ~1.40–1.50 m; TV itself 1.45 m wide. Alt: Madesa Turim 150 cm preto R$290 (38). |
+| Ventilador de teto Ventisol Fênix Inverter LED + remote, bivolt × 4 | R$269 each | ML Full, 4.7★ / 616 | Sala + 3 quartos. |
+| Guarda-roupa Bélgica solteiro com espelho 119 cm (Santos Andirá) × 2 | R$630 each | MM, seller Esplanada Móveis (13), 3-month warranty | Quarto 2 + suíte. Alt: Madesa Denver solteiro R$700 (40). |
+| Jogo de lençol casal 400 fios, 3 peças (Relíquias do Interior) × 3 | R$33 each | ML Full, 4.5★ / 3,816 | |
+| Kit 4 peças banheiro inox 304 dourado (Fino Inox) × 2 | R$171 each | MM, delivered by MM, 12-month anti-rust warranty | Matches the gold taps. |
+| Rede de descanso casal algodão (Walnut) | R$57 | ML Full, 4.8★ / 276 | Front porch. |
+| Varal de chão 3 andares (Kontuz) | R$69 | ML Full, 4.5★ / 3,606 | |
+New room filter "Lavanderia e varanda" (externa). List now 32 items, R$22,733.
+Left out on purpose: box de vidro (local glazier), porch table/chairs (depends on where the 6-seat table goes), mosquito screens (made to measure).
+Open: house voltage (127 V vs 220 V) decides the oven/washer version; fridge, microwave and showers on the list are 220 V.
