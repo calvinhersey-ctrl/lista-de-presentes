@@ -347,13 +347,6 @@ window.CONTENT = {
       why:  { pt: "Um para o quarto 2 e um para a suíte. Da mesma família do Bélgica da lista, só que menor. 119 x 191 x 46 cm.", en: "One for bedroom 2 and one for the suite. Same family as the Bélgica on the list, just smaller. 119 x 191 x 46 cm." },
     },
     {
-      id: "jogo-lencol", room: "quartos", qty: 3, price: 33, image: "images/jogo-de-lencol-400-fios.jpg",
-      url: "https://www.magazineluiza.com.br/jogo-de-lencol-03-pecas-400-fios-micropercal-ponto-palito-cama-solteiro-casal-queen-king-reliquias-do-interior/p/cf6e6a57g5/cm/cjct/",
-      store: "Magazine Luiza (Relíquias do Interior)",
-      name: { pt: "Jogo de lençol casal, 400 fios, 3 peças", en: "Double bed sheet set, 400 thread count, 3 pieces" },
-      why:  { pt: "Para as duas camas Jasmim e o beliche. Na loja dá para escolher a cor.", en: "For the two Jasmim beds and the bunk bed. Pick the colour in the store." },
-    },
-    {
       id: "kit-banheiro", room: "banheiro", qty: 2, price: 171, image: "images/kit-banheiro-inox-dourado.jpg",
       url: "https://www.madeiramadeira.com.br/kit-acessorios-para-banheiro-4-pecas-aco-inox-304-premium-fino-inox-dourado-brilhante-316380220.html",
       store: "MadeiraMadeira (Fino Inox)",
