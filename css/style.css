@@ -1,6 +1,6 @@
-/* Layout: a festive green header with Copacabana-sidewalk waves, a scoreboard
-   that overlaps it (progress + family showdown), then gift cards with price
-   stickers, a leaderboard and a polaroid "wall of love". Brazil-flag colours:
+/* Layout: a festive green header with Copacabana-sidewalk waves, a progress
+   card that overlaps it, then gift cards with price stickers and a polaroid
+   "wall of love". Brazil-flag colours:
    green, sunshine yellow, blue; white cards on a faintly green ground. */
 :root {
   --bg: #f3f7f1;
@@ -165,6 +165,7 @@ button { font: inherit; }
   padding: 8px 16px;
   box-shadow: 0 6px 18px -8px rgba(0, 0, 0, .5);
   transform: rotate(-1.5deg);
+  font-variant-numeric: tabular-nums;
 }
 
 /* floating party icons */
@@ -222,7 +223,7 @@ main { display: grid; gap: 52px; padding-block: 0 64px; }
   position: relative; z-index: 3;
   margin-top: -78px;
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  grid-template-columns: 1fr;
   gap: 16px;
 }
 .score-card {
@@ -256,38 +257,6 @@ main { display: grid; gap: 52px; padding-block: 0 64px; }
 }
 @keyframes stripes { to { background-position: 28px 0, 0 0; } }
 .progress-sub { margin: 10px 0 0; font-weight: 600; }
-
-.card-head { display: grid; gap: 2px; }
-.card-title { margin: 0; font-family: var(--display); font-weight: 800; font-size: 22px; }
-.card-sub { margin: 0; color: var(--muted); font-size: 14px; }
-.battle {
-  margin-top: 14px;
-  display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px;
-}
-.team { display: grid; justify-items: center; text-align: center; gap: 2px; min-width: 0; }
-.flag { font-size: 30px; line-height: 1; }
-.team-name { font-weight: 700; font-size: 14px; line-height: 1.2; }
-.team-score {
-  font-family: var(--display); font-weight: 800; font-size: 40px; line-height: 1;
-  font-variant-numeric: tabular-nums;
-}
-.team-b .team-score { color: var(--green-ink); }
-.team-c .team-score { color: var(--blue); }
-.vs { font-family: var(--display); font-weight: 800; font-size: 26px; color: var(--muted); }
-.team.leading .flag { animation: cheer 1.6s ease-in-out infinite; }
-@keyframes cheer { 0%, 100% { transform: scale(1) rotate(0); } 50% { transform: scale(1.18) rotate(-8deg); } }
-.tug {
-  margin-top: 14px; height: 14px; border-radius: 999px; overflow: visible;
-  display: flex; position: relative; background: var(--line);
-}
-.tug-b, .tug-c { display: block; height: 100%; transition: width .9s cubic-bezier(.2, .8, .2, 1); }
-.tug-b { width: 50%; background: linear-gradient(90deg, #0f7a52, #ffcc29); border-radius: 999px 0 0 999px; }
-.tug-c { width: 50%; background: linear-gradient(90deg, #d93a4a, #1d5fd1); border-radius: 0 999px 999px 0; }
-.tug-knot {
-  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -52%);
-  font-size: 24px; transition: left .9s cubic-bezier(.2, .8, .2, 1);
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, .3));
-}
 
 /* ---------- How it works ---------- */
 .how { display: grid; gap: 16px; }
@@ -445,19 +414,6 @@ main { display: grid; gap: 52px; padding-block: 0 64px; }
 }
 .claim-form input[type="text"]:focus, .claim-form textarea:focus { border-color: var(--btn); outline: none; }
 .claim-form textarea { resize: vertical; min-height: 64px; }
-.team-pick { border: 0; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.team-pick legend { font-size: 14px; font-weight: 700; padding: 0; margin-bottom: 6px; }
-.tp { position: relative; }
-.tp input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
-.tp span {
-  display: flex; align-items: center; justify-content: center; gap: 6px; text-align: center;
-  border: 1.5px solid var(--line); border-radius: 12px; padding: 10px 8px;
-  font-weight: 700; font-size: 14px; line-height: 1.2; cursor: pointer;
-  transition: background .15s ease, border-color .15s ease;
-}
-.tp input:focus-visible + span { outline: 3px solid var(--sun); outline-offset: 2px; }
-.tp-b input:checked + span { background: var(--green-soft); border-color: #0f7a52; color: var(--green-ink); }
-.tp-c input:checked + span { background: var(--blue-soft); border-color: var(--blue); color: var(--blue); }
 .claim-form .row { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
 .form-error { color: var(--danger); font-size: 14px; margin: 0; }
 
@@ -540,36 +496,6 @@ main { display: grid; gap: 52px; padding-block: 0 64px; }
 body.sheet-open { overflow: hidden; }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 
-/* ---------- Leaderboard ---------- */
-.trophy { font-size: 30px; }
-.lb { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: rank; }
-.lb li {
-  display: grid; grid-template-columns: 48px 1fr auto; align-items: center; gap: 14px;
-  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
-  padding: 12px 16px; min-width: 0;
-}
-.lb li.anim { animation: pop-in .45s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--i, 0) * 60ms); }
-.lb li.top1 { background: linear-gradient(90deg, var(--sun-soft), var(--card) 70%); border-color: var(--sun); }
-.medal {
-  width: 44px; height: 44px; border-radius: 50%;
-  display: grid; place-items: center;
-  font-family: var(--display); font-weight: 800; font-size: 18px;
-  background: var(--green-soft); color: var(--green-ink);
-}
-.medal.m { background: transparent; font-size: 34px; }
-.lb-who { min-width: 0; }
-.lb-name { margin: 0; font-weight: 700; font-size: 18px; overflow-wrap: anywhere; }
-.lb-team { margin: 0; font-size: 13px; color: var(--muted); }
-.lb-count {
-  font-family: var(--display); font-weight: 800; font-size: 18px; white-space: nowrap;
-  background: var(--green-soft); color: var(--green-ink); border-radius: 999px; padding: 6px 12px;
-  font-variant-numeric: tabular-nums;
-}
-.lb-empty {
-  background: var(--card); border: 2px dashed var(--line); border-radius: 16px;
-  padding: 22px; text-align: center;
-}
-
 /* ---------- Wall of love (polaroids) ---------- */
 .mural {
   list-style: none; margin: 0; padding: 8px 0 0;
@@ -597,7 +523,6 @@ body.sheet-open { overflow: hidden; }
 .m-by .heart { color: #ff5d8f; }
 .m-gift { margin: 2px 2px 0; font-size: 13px; color: #5a6b61; }
 .m-msg { margin: 6px 2px 0; font-family: var(--hand); font-size: 21px; line-height: 1.1; color: #0a4a33; overflow-wrap: anywhere; }
-.m-team { position: absolute; top: 16px; right: 16px; z-index: 2; font-size: 22px; filter: drop-shadow(0 1px 2px rgba(0,0,0,.25)); }
 .m-undo { margin: 6px 2px 0; }
 
 /* ---------- Footer ---------- */
@@ -628,7 +553,7 @@ body.sheet-open { overflow: hidden; }
   body { font-size: 16px; }
   .hero { padding-block: 18px 100px; }
   .intro { font-size: 16px; }
-  .scoreboard { grid-template-columns: 1fr; margin-top: -70px; }
+  .scoreboard { margin-top: -70px; }
   .steps { grid-template-columns: 1fr; }
   .steps li { grid-template-columns: 52px 1fr; align-items: center; column-gap: 14px; }
   .big-num { font-size: 48px; }
@@ -637,9 +562,6 @@ body.sheet-open { overflow: hidden; }
   .mural { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 14px; }
   .m-by { font-size: 22px; }
   .m-msg { font-size: 18px; }
-  .lb li { grid-template-columns: 40px 1fr auto; gap: 10px; padding: 10px 12px; }
-  .medal { width: 38px; height: 38px; font-size: 16px; }
-  .medal.m { font-size: 28px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

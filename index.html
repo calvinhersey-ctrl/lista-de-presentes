@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=20261026r">
+  <link rel="stylesheet" href="css/style.css?v=20261026u">
 </head>
 <body>
   <header class="hero">
@@ -46,7 +46,7 @@
   </header>
 
   <main class="wrap">
-    <section class="scoreboard" aria-label="Placar">
+    <section class="scoreboard" aria-label="Progresso">
       <div class="score-card progress-card">
         <div class="progress-top">
           <span class="big-num" id="done-num">0</span>
@@ -57,40 +57,6 @@
         </div>
         <p class="progress-sub" id="progress-sub"></p>
       </div>
-
-      <div class="score-card battle-card">
-        <div class="card-head">
-          <h2 class="card-title" data-t="battle_title"></h2>
-          <p class="card-sub" data-t="battle_sub"></p>
-        </div>
-        <div class="battle">
-          <div class="team team-b">
-            <span class="flag">🇧🇷</span>
-            <span class="team-name" data-t="team_bruna"></span>
-            <span class="team-score" id="score-b">0</span>
-          </div>
-          <span class="vs">×</span>
-          <div class="team team-c">
-            <span class="flag">🇺🇸</span>
-            <span class="team-name" data-t="team_calvin"></span>
-            <span class="team-score" id="score-c">0</span>
-          </div>
-        </div>
-        <div class="tug" aria-hidden="true">
-          <span class="tug-b" id="tug-b"></span>
-          <span class="tug-knot" id="tug-knot">🎀</span>
-          <span class="tug-c" id="tug-c"></span>
-        </div>
-      </div>
-    </section>
-
-    <section class="leaderboard" aria-labelledby="lb-title">
-      <div class="section-head">
-        <h2 id="lb-title" class="h2" data-t="leaderboard_title"></h2>
-        <span class="trophy" aria-hidden="true">🏆</span>
-      </div>
-      <ol class="lb" id="lb"></ol>
-      <p class="empty lb-empty" id="lb-empty" data-t="leaderboard_empty"></p>
     </section>
 
     <section class="how" aria-labelledby="how-title">
@@ -154,8 +120,8 @@
   <canvas id="confetti" aria-hidden="true"></canvas>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="js/config.js?v=20261026r"></script>
-  <script src="js/content.js?v=20261026r"></script>
-  <script src="js/app.js?v=20261026r"></script>
+  <script src="js/config.js?v=20261026u"></script>
+  <script src="js/content.js?v=20261026u"></script>
+  <script src="js/app.js?v=20261026u"></script>
 </body>
 </html>

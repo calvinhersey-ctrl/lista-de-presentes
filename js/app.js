@@ -7,7 +7,6 @@
   const TEST_MODE = /[?&]test\b/.test(location.search);
   const ONLINE = !TEST_MODE && !!(CFG.SUPABASE_URL && CFG.SUPABASE_ANON_KEY);
   const LS_LANG = "lista.lang";
-  const LS_SIDE = "lista.side";
   const LS_TOKENS = "lista.tokens";       // { id: undoToken } for claims and contributions made on this device
   const LS_LOCAL = "lista.localClaims";   // test mode only
   const LS_LOCAL_FUND = "lista.localFund"; // test mode only
@@ -18,7 +17,6 @@
   const FILTERS = ["all", "cozinha", "sala", "quartos", "banheiro", "externa", "budget"];
   const FILTER_ICON = { all: "🏠", cozinha: "🍳", sala: "🛋️", quartos: "🛏️", banheiro: "🚿", externa: "🧺", budget: "💸" };
   const BUDGET_MAX = 150;
-  const TEAM_FLAG = { bruna: "🇧🇷", calvin: "🇺🇸" };
   const QUICK = { BRL: [50, 100, 200, 500], USD: [20, 50, 100, 200] };
 
   // ---------- storage ----------
@@ -54,12 +52,6 @@
     document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
     render();
     if (sheet) renderSheet();
-  }
-
-  function defaultSide() {
-    const s = readStr(LS_SIDE);
-    if (s === "bruna" || s === "calvin") return s;
-    return lang === "en" ? "calvin" : "bruna";
   }
 
   // ---------- backend ----------
@@ -207,12 +199,21 @@
   function claimsFor(giftId) { return claims.filter(c => c.gift_id === giftId); }
   function leftOf(g) { return g.qty - claimsFor(g.id).length; }
   function hash(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0; return Math.abs(h); }
-  function daysToChristmas() {
-    const now = new Date();
-    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-    let xmas = new Date(now.getFullYear(), 11, 25);
-    if (today > xmas) xmas = new Date(now.getFullYear() + 1, 11, 25);
-    return Math.round((xmas - today) / 86400000);
+  // Time left until Christmas in Brazil (midnight 25 Dec, Brasília time, UTC-3).
+  // null on Christmas Day itself.
+  function timeToChristmas() {
+    const now = Date.now();
+    let year = new Date(now).getUTCFullYear();
+    let xmas = Date.UTC(year, 11, 25, 3);
+    if (now >= xmas + 86400000) xmas = Date.UTC(++year, 11, 25, 3);
+    if (now >= xmas) return null;
+    const secs = Math.floor((xmas - now) / 1000);
+    return { d: Math.floor(secs / 86400), h: Math.floor(secs / 3600) % 24, m: Math.floor(secs / 60) % 60, s: secs % 60 };
+  }
+  function renderCountdown() {
+    const cd = document.getElementById("countdown");
+    cd.textContent = T().countdown(timeToChristmas());
+    cd.hidden = false;
   }
   function matchesFilter(g) {
     if (filter === "all") return true;
@@ -301,9 +302,7 @@
       b.classList.toggle("is-on", on);
       b.setAttribute("aria-pressed", on ? "true" : "false");
     });
-    const cd = document.getElementById("countdown");
-    cd.textContent = t.countdown(daysToChristmas());
-    cd.hidden = false;
+    renderCountdown();
     const le = document.getElementById("load-error");
     le.hidden = !loadFailed;
     le.textContent = t.load_error;
@@ -371,18 +370,6 @@
     bar.setAttribute("aria-label", `${pct}%`);
     document.getElementById("progress-sub").textContent = raised >= total ? t.progress_done : t.progress_sub;
 
-    const giving = allGiving();
-    const b = giving.filter(c => c.side === "bruna").length;
-    const c = giving.filter(c => c.side === "calvin").length;
-    document.getElementById("score-b").textContent = b;
-    document.getElementById("score-c").textContent = c;
-    let share = (b + c) ? (b / (b + c)) * 100 : 50;
-    share = Math.max(8, Math.min(92, share));
-    document.getElementById("tug-b").style.width = share + "%";
-    document.getElementById("tug-c").style.width = (100 - share) + "%";
-    document.getElementById("tug-knot").style.left = share + "%";
-    document.querySelector(".team-b").classList.toggle("leading", b > c);
-    document.querySelector(".team-c").classList.toggle("leading", c > b);
   }
 
   function renderFilters(available) {
@@ -395,16 +382,6 @@
   }
 
   // ---------- render: cards ----------
-  function teamPickHTML(id) {
-    const t = T();
-    const side = defaultSide();
-    return `
-      <fieldset class="team-pick">
-        <legend>${esc(t.team_label)}</legend>
-        <label class="tp tp-b"><input type="radio" name="side" value="bruna" id="side-b-${id}" aria-label="${esc(t.team_bruna)}" ${side === "bruna" ? "checked" : ""}><span>🇧🇷 ${esc(t.team_bruna)}</span></label>
-        <label class="tp tp-c"><input type="radio" name="side" value="calvin" id="side-c-${id}" aria-label="${esc(t.team_calvin)}" ${side === "calvin" ? "checked" : ""}><span>🇺🇸 ${esc(t.team_calvin)}</span></label>
-      </fieldset>`;
-  }
   function formButtonsHTML() {
     const t = T();
     return `
@@ -436,7 +413,6 @@
             </div>
             <div class="quick">${QUICK[fundCurrency].map(v => `<button type="button" class="quick-chip" data-quick="${v}">${sym} ${v}</button>`).join("")}</div>
           </div>
-          ${teamPickHTML(FUND_ID)}
           <label class="f">${esc(t.message_label)}
             <textarea name="message" id="msg-${FUND_ID}" maxlength="300" placeholder="${esc(t.message_placeholder)}"></textarea>
           </label>
@@ -479,7 +455,6 @@
           <label class="f">${esc(t.name_label)}
             <input type="text" name="name" id="name-${esc(g.id)}" maxlength="60" required autocomplete="name" placeholder="${esc(t.name_placeholder)}">
           </label>
-          ${teamPickHTML(esc(g.id))}
           <label class="f">${esc(t.message_label)}
             <textarea name="message" id="msg-${esc(g.id)}" maxlength="300" placeholder="${esc(t.message_placeholder)}"></textarea>
           </label>
@@ -506,33 +481,7 @@
       </article>`;
   }
 
-  // ---------- render: leaderboard + wall ----------
-  function leaderboardHTML(anim) {
-    const t = T();
-    const people = new Map();
-    allGiving().forEach((c, idx) => {
-      const key = c.giver_name.trim().toLowerCase().replace(/\s+/g, " ");
-      if (!people.has(key)) people.set(key, { name: c.giver_name.trim(), count: 0, side: null, first: idx });
-      const p = people.get(key);
-      p.count += 1;
-      if (c.side) p.side = c.side;
-    });
-    const ranked = [...people.values()].sort((a, b) => b.count - a.count || a.first - b.first).slice(0, 10);
-    const medals = ["🥇", "🥈", "🥉"];
-    return ranked.map((p, i) => {
-      const team = p.side ? `${TEAM_FLAG[p.side]} ${esc(p.side === "bruna" ? t.team_bruna : t.team_calvin)}` : "";
-      return `
-        <li class="${i === 0 ? "top1 " : ""}${anim ? "anim" : ""}" style="--i:${i}">
-          ${i < 3 ? `<span class="medal m" aria-label="${i + 1}">${medals[i]}</span>` : `<span class="medal">${i + 1}</span>`}
-          <div class="lb-who">
-            <p class="lb-name" translate="no">${esc(p.name)}</p>
-            ${team ? `<p class="lb-team">${team}</p>` : ""}
-          </div>
-          <span class="lb-count">${esc(t.gifts_count(p.count))}</span>
-        </li>`;
-    }).join("");
-  }
-
+  // ---------- render: wall ----------
   function muralHTML() {
     const t = T();
     return allGiving().reverse().map(c => {
@@ -548,7 +497,6 @@
       const undoAttr = isFund ? "data-undo-fund" : "data-undo";
       return `
         <li style="--tilt:${tilt.toFixed(1)}deg">
-          ${c.side ? `<span class="m-team" aria-hidden="true">${TEAM_FLAG[c.side]}</span>` : ""}
           ${pic}
           <p class="m-by"><span translate="no">${esc(c.giver_name)}</span> <span class="heart">♥</span></p>
           <p class="m-gift">${esc(what)}</p>
@@ -592,13 +540,11 @@
   function captureForm() {
     const form = document.querySelector(".claim-form");
     if (!form) return null;
-    const side = form.querySelector('input[name="side"]:checked');
     return {
       key: form.getAttribute("data-gift") || FUND_ID,
       name: form.elements.name.value,
       message: form.elements.message.value,
       amount: form.elements.amount ? form.elements.amount.value : "",
-      side: side ? side.value : null,
       focus: document.activeElement && form.contains(document.activeElement) ? document.activeElement.name : null,
     };
   }
@@ -611,10 +557,6 @@
     form.elements.name.value = saved.name;
     form.elements.message.value = saved.message;
     if (form.elements.amount) form.elements.amount.value = saved.amount;
-    if (saved.side) {
-      const r = form.querySelector(`input[name="side"][value="${saved.side}"]`);
-      if (r) r.checked = true;
-    }
     if (saved.focus && form.elements[saved.focus] && form.elements[saved.focus].focus) form.elements[saved.focus].focus({ preventScroll: true });
   }
 
@@ -637,10 +579,6 @@
     document.getElementById("available-count").textContent = available.length ? `(${available.length})` : "";
     document.getElementById("none-left").hidden = available.length > 0;
     document.getElementById("filter-empty").hidden = !(available.length > 0 && shown.length === 0 && !showFund);
-
-    const lb = leaderboardHTML(anim);
-    document.getElementById("lb").innerHTML = lb;
-    document.getElementById("lb-empty").hidden = lb.trim() !== "";
 
     document.getElementById("given-section").hidden = claims.length + fund.length === 0;
     document.getElementById("given").innerHTML = muralHTML();
@@ -725,10 +663,6 @@
 
   document.addEventListener("keydown", (ev) => { if (ev.key === "Escape" && sheet) closeSheet(); });
 
-  document.addEventListener("change", (ev) => {
-    if (ev.target.matches && ev.target.matches('.claim-form input[name="side"]')) writeStr(LS_SIDE, ev.target.value);
-  });
-
   document.addEventListener("submit", async (ev) => {
     const form = ev.target.closest(".claim-form");
     if (!form) return;
@@ -737,8 +671,6 @@
     const giftId = form.getAttribute("data-gift");
     const name = form.elements.name.value.trim();
     const message = form.elements.message.value.trim();
-    const sideEl = form.querySelector('input[name="side"]:checked');
-    const side = sideEl ? sideEl.value : null;
     const t = T();
     if (!name) { formError = t.error_name; render(); return; }
     let amount = 0;
@@ -746,12 +678,11 @@
       amount = parseAmount(form.elements.amount.value);
       if (!(amount > 0)) { formError = t.error_amount; render(); return; }
     }
-    if (side) writeStr(LS_SIDE, side);
     busy = true; formError = ""; render();
     try {
       const res = isFund
-        ? await backend.contribute(name, amount, fundCurrency, message, side)
-        : await backend.claim(giftId, name, message, side);
+        ? await backend.contribute(name, amount, fundCurrency, message)
+        : await backend.claim(giftId, name, message);
       myTokens[res.id] = res.token;
       writeJSON(LS_TOKENS, myTokens);
       openForm = null;
@@ -775,6 +706,7 @@
   });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
   if (ONLINE) setInterval(refresh, 20000);
+  setInterval(renderCountdown, 1000);
 
   // ---------- today's exchange rate (free, updates daily; cached for 12 hours) ----------
   function applyRate(r) {
