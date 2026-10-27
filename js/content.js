@@ -86,7 +86,7 @@ window.CONTENT = {
       pay_copy: "Copiar",
       pay_copied: "Copiado! ✅",
       pay_open_venmo: "Abrir no Venmo",
-      load_error: "⚠️ Não conseguimos carregar a lista agora. Recarregue a página antes de comprar, para ter certeza de que ninguém já escolheu o presente.",
+      load_error: "⚠️ Não conseguimos carregar a lista agora. Recarregue a página antes de mandar o dinheiro, para ter certeza de que ninguém já escolheu o presente.",
     },
     en: {
       lang_name: "English",
@@ -169,7 +169,7 @@ window.CONTENT = {
       pay_copy: "Copy",
       pay_copied: "Copied! ✅",
       pay_open_venmo: "Open in Venmo",
-      load_error: "⚠️ We couldn't load the list right now. Please reload the page before buying, so you know nobody has picked the gift already.",
+      load_error: "⚠️ We couldn't load the list right now. Please reload the page before sending money, so you know nobody has picked the gift already.",
     },
   },
 
