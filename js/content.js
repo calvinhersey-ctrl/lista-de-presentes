@@ -220,7 +220,7 @@ window.CONTENT = {
       why:  { pt: "Para a cama de cima do beliche.", en: "For the top bunk." },
     },
     {
-      id: "colchoes-bicama", room: "quartos", qty: 1, price: 451, image: "images/colchoes-bicama-d33.jpg",
+      id: "colchoes-bicama", room: "quartos", qty: 2, price: 451, image: "images/colchoes-bicama-d33.jpg",
       url: "https://shopee.com.br/product/1287299002/22698542132",
       store: "Shopee (Bom Sono)",
       name: { pt: "Kit 2 colchões de solteiro D33, 78 x 188 x 12 cm", en: "Set of 2 D33 single mattresses, 78 x 188 x 12 cm" },

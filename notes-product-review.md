@@ -92,3 +92,6 @@ Shopee needed a login in the browser, so these came from Magazine Luiza (ML, "Fu
 New room filter "Lavanderia e varanda" (externa). List now 32 items, R$22,733.
 Left out on purpose: box de vidro (local glazier), porch table/chairs (depends on where the 6-seat table goes), mosquito screens (made to measure).
 Open: house voltage (127 V vs 220 V) decides the oven/washer version; fridge, microwave and showers on the list are 220 V.
+
+## 26 Oct 2026, bicama mattresses x2
+- Kit 2 colchões D33 78x188x12 now qty 2 (Calvin). List total R$23,184.
