@@ -320,6 +320,13 @@ window.CONTENT = {
       why:  { pt: "Madeira maciça, acabamento natural. Cabideiro em cima e prateleiras para sapatos e caixas. 110 x 170 x 31 cm.", en: "Solid pine, natural finish. Hanging rail on top and shelves for shoes and boxes. 110 x 170 x 31 cm." },
     },
     {
+      id: "banco-bau", room: "quartos", qty: 1, price: 230, image: "images/banco-bau-luquinha.jpg",
+      url: "https://www.madeiramadeira.com.br/banco-bau-luquinha-tampo-fresado-basculante-rodizios-em-gel-off-white-cedro-ofertamo-219328977.html",
+      store: "MadeiraMadeira (Ofertamo)",
+      name: { pt: "Banco baú Luquinha com tampo ripado, off white e cedro", en: "Luquinha storage bench with slatted lid, off-white and cedar" },
+      why:  { pt: "Senta em cima, guarda dentro. Tampa com amortecedor, rodinhas de gel que não riscam o piso. 60 x 38 cm.", en: "Sit on it, store things inside. Soft-close lid, gel wheels that don't scratch the floor. 60 x 38 cm." },
+    },
+    {
       id: "cabeceiras", room: "quartos", qty: 1, price: 57, image: "images/cabeceiras-eggers.jpg",
       url: "https://shopee.com.br/product/594157579/19897682210",
       store: "Shopee (Eggers)",
