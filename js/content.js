@@ -222,11 +222,11 @@ window.CONTENT = {
       why:  { pt: "Cor bege, suede, com molas. Para a sala. O frete vem à parte (uns R$ 130).", en: "Beige suede, sprung seat. For the living room. Shipping is extra (about R$130)." },
     },
     {
-      id: "tv", room: "sala", qty: 1, price: 3771, image: "images/tv-tcl-65c6k.jpg",
-      url: "https://shopee.com.br/product/1083800536/23699653165",
-      store: "Shopee (loja oficial Casas Bahia)",
-      name: { pt: "Smart TV TCL 65\" QD-Mini LED 4K (65C6K)", en: "TCL 65\" QD-Mini LED 4K smart TV (65C6K)" },
-      why:  { pt: "Mini LED, 144 Hz, Google TV, som Onkyo. Preço no Pix; no cartão sai R$ 4.299.", en: "Mini LED, 144 Hz, Google TV, Onkyo sound. Pix price; by card it's R$4,299." },
+      id: "tv", room: "sala", qty: 1, price: 3220, image: "images/tv-tcl-55c6k.jpg",
+      url: "https://www.amazon.com.br/TCL-Polegadas-Bluetooth-Google-55C6K/dp/B0F7JZMVKF",
+      store: "Amazon (Fast Shop, enviado pela Amazon)",
+      name: { pt: "Smart TV TCL 55\" QD-Mini LED 4K (55C6K)", en: "TCL 55\" QD-Mini LED 4K smart TV (55C6K)" },
+      why:  { pt: "Mini LED, 144 Hz, Google TV, som Onkyo. Tamanho certo para a sala. Nota 4,7 com quase 400 avaliações.", en: "Mini LED, 144 Hz, Google TV, Onkyo sound. The right size for the living room. Rated 4.7 by almost 400 buyers." },
     },
     {
       id: "rack-tv", room: "sala", qty: 1, price: 290, image: "images/rack-tv-off-white-freijo.jpg",
