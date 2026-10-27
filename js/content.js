@@ -313,6 +313,13 @@ window.CONTENT = {
       why:  { pt: "Um para o quarto 2 e um para a suíte. Da mesma família do Bélgica da lista, só que menor. 119 x 191 x 46 cm.", en: "One for bedroom 2 and one for the suite. Same family as the Bélgica on the list, just smaller. 119 x 191 x 46 cm." },
     },
     {
+      id: "arara", room: "quartos", qty: 1, price: 215, image: "images/arara-roupas-pinus.jpg",
+      url: "https://www.madeiramadeira.com.br/arara-dupla-e-arara-simples-em-madeira-reflorestada-multiuso-para-dormitorio-arara-de-roupas-501264774.html",
+      store: "MadeiraMadeira (Technox)",
+      name: { pt: "Arara de roupas dupla em pinus, com prateleiras, 110 cm", en: "Double pine clothes rack with shelves, 110 cm" },
+      why:  { pt: "Madeira maciça, acabamento natural. Cabideiro em cima e prateleiras para sapatos e caixas. 110 x 170 x 31 cm.", en: "Solid pine, natural finish. Hanging rail on top and shelves for shoes and boxes. 110 x 170 x 31 cm." },
+    },
+    {
       id: "cabeceiras", room: "quartos", qty: 1, price: 57, image: "images/cabeceiras-eggers.jpg",
       url: "https://shopee.com.br/product/594157579/19897682210",
       store: "Shopee (Eggers)",

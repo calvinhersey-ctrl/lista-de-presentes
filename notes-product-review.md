@@ -103,3 +103,4 @@ Open: house voltage (127 V vs 220 V) decides the oven/washer version; fridge, mi
 - Sheets kept (Calvin wrote 9 but meant the wardrobes' fit check). List now 28 items.
 - Sheet sets off too (Calvin). List now 27 items.
 - TV swapped (Calvin): TCL 55C6K QD-Mini LED 4K 144Hz, R$3,220, Amazon (sold by Fast Shop BR, shipped by Amazon), 4.7★ / 387. Same model as the 65C6K it replaces (R$3,771 on Shopee), one size down. Also seen: TCL 55P7K QLED R$2,622 (4.8★ / 536, not Mini LED), TCL 55P8K R$1,299 (price looked too low), LG 65UA7500 R$3,149, Hisense 65Q6QV R$3,214, TCL 65P7L R$3,419. List total R$19,535.
+- Added (Calvin's link): Arara de roupas dupla, pinus reflorestado, 110 x 170 x 31.5 cm, R$215 Pix, MadeiraMadeira seller Technox (16 reviews, 6k+ sales), 90-day warranty. The listing covers a simples (80 cm) and a dupla (110 cm) model; this id is the dupla. List 28 items, R$19,750.
