@@ -123,3 +123,6 @@ Open: house voltage (127 V vs 220 V) decides the oven/washer version; fridge, mi
 | Colchão solteiro Ortobom | 10 Nov | 15 |
 Not checkable without login: Shopee (12 items, typically 1–3 weeks), Magalu Full (4 items, typically 1–2 weeks); Amazon TV showed a next-day estimate for the browser's default city, not Paraty.
 Rule used for order-by dates: lead time + 1 week margin before 25 Dec (Black Friday 27 Nov slows carriers).
+
+## 28 Oct 2026, TV again
+- TV swapped (Calvin): TCL 55P7L QLED 4K 120 Hz VRR (HDMI 2.1), R$2,630, Amazon (sold by Imagem Hitech, shipped by Amazon), 4.7★ / 49. Replaces the 55C6K Mini LED (R$3,220). Cheaper 60 Hz sets seen: Hisense 55A6NV R$2,250 (4.5★ / 471), LG 55AU801C R$2,249, Hisense 55Q6QV QLED R$2,285, Semp 55S62 R$2,600; 50": TCL 50P7L R$2,184, Philco R$2,049. TCL 55P8K went from R$1,299 to R$2,999. List total R$19,390.

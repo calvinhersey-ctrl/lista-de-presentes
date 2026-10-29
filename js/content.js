@@ -222,11 +222,11 @@ window.CONTENT = {
       why:  { pt: "Cor bege, suede, com molas. Para a sala. O frete vem à parte (uns R$ 130).", en: "Beige suede, sprung seat. For the living room. Shipping is extra (about R$130)." },
     },
     {
-      id: "tv", room: "sala", qty: 1, price: 3220, image: "images/tv-tcl-55c6k.jpg",
-      url: "https://www.amazon.com.br/TCL-Polegadas-Bluetooth-Google-55C6K/dp/B0F7JZMVKF",
-      store: "Amazon (Fast Shop, enviado pela Amazon)",
-      name: { pt: "Smart TV TCL 55\" QD-Mini LED 4K (55C6K)", en: "TCL 55\" QD-Mini LED 4K smart TV (55C6K)" },
-      why:  { pt: "Mini LED, 144 Hz, Google TV, som Onkyo. Tamanho certo para a sala. Nota 4,7 com quase 400 avaliações.", en: "Mini LED, 144 Hz, Google TV, Onkyo sound. The right size for the living room. Rated 4.7 by almost 400 buyers." },
+      id: "tv", room: "sala", qty: 1, price: 2630, image: "images/tv-tcl-55p7l.jpg",
+      url: "https://www.amazon.com.br/Smart-TCL-Polegadas-Bluetooth-Google/dp/B0H4NP2GQY",
+      store: "Amazon (enviado pela Amazon)",
+      name: { pt: "Smart TV TCL 55\" QLED 4K 120 Hz (55P7L)", en: "TCL 55\" QLED 4K 120 Hz smart TV (55P7L)" },
+      why:  { pt: "QLED, 120 Hz com VRR e HDMI 2.1 para o videogame, Google TV, Dolby Vision. Tamanho certo para a sala.", en: "QLED, 120 Hz with VRR and HDMI 2.1 for the console, Google TV, Dolby Vision. The right size for the living room." },
     },
     {
       id: "rack-tv", room: "sala", qty: 1, price: 290, image: "images/rack-tv-off-white-freijo.jpg",
